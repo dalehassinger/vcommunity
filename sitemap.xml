@@ -2,9 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dalehassinger.github.io/vcommunity/about/</loc>
-    <lastmod>2023-11-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/aria-operations/</loc>
     <lastmod>2023-11-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -17,6 +14,8 @@
     <loc>https://dalehassinger.github.io/vcommunity/aria-automation-config/logo/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url><url>
+    <loc>https://dalehassinger.github.io/vcommunity/about/</loc>
+  </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/aria-automation/</loc>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/aria-automation/configuration/</loc>
@@ -28,19 +27,7 @@
     <loc>https://dalehassinger.github.io/vcommunity/shortcodes/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/tags/aria-automation/</loc>
-    <lastmod>2023-11-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/tags/aria-automation-config/</loc>
-    <lastmod>2023-11-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/tags/aria-operations/</loc>
-    <lastmod>2023-11-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/tags/aria-operations-for-logs/</loc>
-    <lastmod>2023-11-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/tags/dale-hassinger/</loc>
     <lastmod>2023-11-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/tags/dashboard/</loc>
@@ -72,6 +59,12 @@
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/shortcodes/alert/</loc>
   </url><url>
+    <loc>https://dalehassinger.github.io/vcommunity/tags/aria-automation/</loc>
+  </url><url>
+    <loc>https://dalehassinger.github.io/vcommunity/tags/aria-automation-config/</loc>
+  </url><url>
+    <loc>https://dalehassinger.github.io/vcommunity/tags/aria-operations-for-logs/</loc>
+  </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/shortcodes/attachments/</loc>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/shortcodes/button/</loc>
@@ -81,6 +74,8 @@
     <loc>https://dalehassinger.github.io/vcommunity/shortcodes/children/</loc>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/credits/</loc>
+  </url><url>
+    <loc>https://dalehassinger.github.io/vcommunity/tags/dale-hassinger/</loc>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/aria-automation-config/customize-style/disable/</loc>
   </url><url>
