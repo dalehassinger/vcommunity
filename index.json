@@ -1,5 +1,19 @@
 [
 {
+	"uri": "https://dalehassinger.github.io/vcommunity/",
+	"title": "About this site",
+	"tags": ["Aria Operations", "Aria Operations for Logs", "Aria Automation", "Aria Automation Config", "Dale Hassinger"],
+	"description": "",
+	"content": "Your Resource to learn about Automation, Monitoring, Logging, more\u0026hellip; "
+},
+{
+	"uri": "https://dalehassinger.github.io/vcommunity/about/",
+	"title": "About this site",
+	"tags": ["Aria Operations", "Aria Operations for Logs", "Aria Automation", "Aria Automation Config", "Dale Hassinger"],
+	"description": "",
+	"content": "This Site was created to share items with the vCommunity.\nhugo generate lunrjs index.json at the root of `public` folder if the site only has one language or within each language subfolder. When you build the site with `hugo server`, hugo generates it internally and of course it don't show up in the filesystem "
+},
+{
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-operations/",
 	"title": "Aria Operations",
 	"tags": ["Aria Operations", "Dashboard"],
@@ -26,13 +40,6 @@
 	"tags": [],
 	"description": "",
 	"content": "Create a _header.md page in content folder. Its content is what you get in the logo placeholder (top left of the screen).\nTip : you can add a image, a combobox with links to other documentation\u0026hellip;. Tip 2 : look at extra static menu if you want to add links to other website in this sidebar "
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/about/",
-	"title": "About this site",
-	"tags": ["Aria Operations", "Aria Operations for Logs", "Aria Automation", "Aria Automation Config", "Dale Hassinger"],
-	"description": "",
-	"content": "This Site was created to share items with the vCommunity.\nhugo generate lunrjs index.json at the root of `public` folder if the site only has one language or within each language subfolder. When you build the site with `hugo server`, hugo generates it internally and of course it don't show up in the filesystem "
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/",
@@ -70,8 +77,36 @@
 	"content": "A bunch of Shortcodes are available with this theme :\n"
 },
 {
+	"uri": "https://dalehassinger.github.io/vcommunity/tags/aria-automation/",
+	"title": "Aria Automation",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://dalehassinger.github.io/vcommunity/tags/aria-automation-config/",
+	"title": "Aria Automation Config",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "https://dalehassinger.github.io/vcommunity/tags/aria-operations/",
 	"title": "Aria Operations",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://dalehassinger.github.io/vcommunity/tags/aria-operations-for-logs/",
+	"title": "Aria Operations for Logs",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://dalehassinger.github.io/vcommunity/tags/dale-hassinger/",
+	"title": "Dale Hassinger",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -82,13 +117,6 @@
 	"tags": [],
 	"description": "",
 	"content": ""
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/",
-	"title": "DocDock Theme for Hugo",
-	"tags": [],
-	"description": "",
-	"content": "Your Resource to learn about Automation\u0026hellip; "
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/tags/",
@@ -147,27 +175,6 @@
 	"content": "The alert shortcode allow you to highlight information in your page. They create a colored box surrounding your text, like this:\nThis is an alert ! Usage Parameter Default Description theme info success, info,warning,danger Tips : setting only the theme as argument works too : {{%alert warning%}} instead of {{%alert theme=\u0026quot;warning\u0026quot;%}}\nBasic examples {{% alert theme=\u0026quot;info\u0026quot; %}}**this** is a text{{% /alert %}} {{% alert theme=\u0026quot;success\u0026quot; %}}**Yeahhh !** is a text{{% /alert %}} {{% alert theme=\u0026quot;warning\u0026quot; %}}**Be carefull** is a text{{% /alert %}} {{% alert theme=\u0026quot;danger\u0026quot; %}}**Beware !** is a text{{% /alert %}} this is an info Yeahhh ! is an success Be carefull is a warning Beware ! is a danger "
 },
 {
-	"uri": "https://dalehassinger.github.io/vcommunity/tags/aria-automation/",
-	"title": "Aria Automation",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/tags/aria-automation-config/",
-	"title": "Aria Automation Config",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/tags/aria-operations-for-logs/",
-	"title": "Aria Operations for Logs",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://dalehassinger.github.io/vcommunity/shortcodes/attachments/",
 	"title": "attachments",
 	"tags": [],
@@ -201,13 +208,6 @@
 	"tags": [],
 	"description": "contributors and packages used by hugo-theme-docdock",
 	"content": "github contributors @vjeantet 247 commits @matcornic 45 commits @W-Floyd 24 commits @Pilskalns 24 commits @lierdakil 16 commits @Marthym 13 commits @gwleclerc 9 commits @jose-oc 8 commits @siamkreative 6 commits @Xipas 5 commits @FMuro 2 commits @joepvd 2 commits @EnigmaCurry 2 commits @Yoann-M 2 commits @aral 2 commits @adamlamar 1 commits @byzheng 1 commits @zivbk1 1 commits @danielfbm 1 commits @damoon 1 commits @vielmetti 1 commits @erikjasiak 1 commits @giuliov 1 commits @farmergreg 1 commits @JOduMonT 1 commits @tarpdalton 1 commits @jamestharpe 1 commits @JohnBlood 1 commits @kamilchm 1 commits @lgfischer 1 commits @ripienaar 1 commits @rsanderscybraics 1 commits @shazic 1 commits @viertaxa 1 commits @uweschaefer 1 commits @rabadiw 1 commits @wshayes 1 commits @eyoder 1 commits @ivan-danilov 1 commits @karlmacklin 1 commits @petzi53 1 commits @remi31000 1 commits @tonivj5 1 commits Other contribution @bep supports and advices @facette.io Flex style based on facette documentation theme, Thanks to @vbatoufflet Packages and libraries Bootstrap - front-end framework mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services\u0026hellip; JavaScript-autoComplete - An extremely lightweight and powerful vanilla JavaScript completion suggester. clipboard.js - copy text to clipboard highlight.js - Javascript syntax highlighter modernizr - A JavaScript toolkit that allows web developers to use new CSS3 and HTML5 features while maintaining a fine level of control over browsers that don\u0026rsquo;t support reveal-js - The HTML Presentation Framework Tooling Netlify - Continuous deployement and hosting of this documentation Hugo "
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/tags/dale-hassinger/",
-	"title": "Dale Hassinger",
-	"tags": [],
-	"description": "",
-	"content": ""
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation-config/customize-style/disable/",

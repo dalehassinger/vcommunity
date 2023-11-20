@@ -9,10 +9,38 @@
     <lastBuildDate>Mon, 20 Nov 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://dalehassinger.github.io/vcommunity/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Aria Automation</title>
+      <link>https://dalehassinger.github.io/vcommunity/tags/aria-automation/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://dalehassinger.github.io/vcommunity/tags/aria-automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Aria Automation Config</title>
+      <link>https://dalehassinger.github.io/vcommunity/tags/aria-automation-config/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://dalehassinger.github.io/vcommunity/tags/aria-automation-config/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Aria Operations</title>
       <link>https://dalehassinger.github.io/vcommunity/tags/aria-operations/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://dalehassinger.github.io/vcommunity/tags/aria-operations/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Aria Operations for Logs</title>
+      <link>https://dalehassinger.github.io/vcommunity/tags/aria-operations-for-logs/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://dalehassinger.github.io/vcommunity/tags/aria-operations-for-logs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dale Hassinger</title>
+      <link>https://dalehassinger.github.io/vcommunity/tags/dale-hassinger/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://dalehassinger.github.io/vcommunity/tags/dale-hassinger/</guid>
       <description></description>
     </item>
     <item>
@@ -34,34 +62,6 @@
       <link>https://dalehassinger.github.io/vcommunity/tags/tag2/</link>
       <pubDate>Fri, 28 Apr 2017 18:36:24 +0200</pubDate>
       <guid>https://dalehassinger.github.io/vcommunity/tags/tag2/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Aria Automation</title>
-      <link>https://dalehassinger.github.io/vcommunity/tags/aria-automation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/tags/aria-automation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Aria Automation Config</title>
-      <link>https://dalehassinger.github.io/vcommunity/tags/aria-automation-config/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/tags/aria-automation-config/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Aria Operations for Logs</title>
-      <link>https://dalehassinger.github.io/vcommunity/tags/aria-operations-for-logs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/tags/aria-operations-for-logs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Dale Hassinger</title>
-      <link>https://dalehassinger.github.io/vcommunity/tags/dale-hassinger/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/tags/dale-hassinger/</guid>
       <description></description>
     </item>
   </channel>
