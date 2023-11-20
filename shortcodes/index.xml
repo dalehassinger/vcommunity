@@ -100,17 +100,7 @@ Warning {{% notice warning %}} An warning disclaimer {{% /notice %}} renders as<
       <link>https://dalehassinger.github.io/vcommunity/shortcodes/revealjs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://dalehassinger.github.io/vcommunity/shortcodes/revealjs/</guid>
-      <description>This shortcode will format the enclosed markdow to render it with reveal.js at runtime (client-side)
-Read more on revealjs github repo.
-Usage revealjs can use the following named parameters :
-theme
-transition
-controls
-progress
-history
-center
-Important Even if the enclosed content is a mardown, use `&lt;` shortcode notation instead of the `%` notation Content formating and slide delimiters read more on this here
-Demo # In the morning ___ ## Getting up - Turn off alarm - Get out of bed ___ ## Breakfast - Eat eggs - Drink coffee --- # In the evening ___ ## Dinner - Eat spaghetti - Drink wine ___ ## Going to sleep - Get in bed - Count sheep See it fullscreen Source : Show code .</description>
+      <description></description>
     </item>
   </channel>
 </rss>

@@ -56,18 +56,18 @@
 	"content": "When building the website, you can set a theme by using --theme option. We suggest you to edit your configuration file and set the theme by default. Example with config.toml format.\nImport sample config from sample site to Hugo root:\n$ cp themes/docdock/exampleSite/config.toml . Change following config.toml line as needed, depending on method above:\ntheme = \u0026#34;\u0026lt;hugo-theme-docdock-dir-name\u0026gt;\u0026#34; Comment out following line, so default themes/ will be used:\n# themesdir = \u0026#34;../..\u0026#34; Activate search If not already present, add the follow lines to the config.toml file.\n[outputs] home = [ \u0026#34;HTML\u0026#34;, \u0026#34;RSS\u0026#34;, \u0026#34;JSON\u0026#34;] LUNRJS search index file will be generated on content changes.\n(Bonus) Create empty file .gitkeep inside public/ and add following to .gitignore. This way it will keep repo smaller and won\u0026rsquo;t bring build result files and errors to remote checkout places:\n/public/* !/public/.gitkeep Preview site $ hugo server to browse site on http://localhost:1313\nYour website\u0026rsquo;s content"
 },
 {
-	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/installation/",
-	"title": "Installation",
-	"tags": [],
-	"description": "",
-	"content": "HUGO v0.32 minimum required to use this theme The following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you to train by following this great documentation for beginners.\nInstallation We assume that all changes to Hugo content and customizations are going to be tracked by git (GitHub, Bitbucket etc.). Develop locally, build on remote system.\nBefore start real work:\nInitialize Hugo Install DocDock theme Configure DocDock and Hugo Prepare empty Hugo site Create empty directory, which will be root of your Hugo project. Navigate there and let Hugo to create minimal required directory structure:\n$ hugo new site . AFTER that, initialize this as git directory where to track further changes\n$ git init Next, there are at least three ways to install DocDock (first recommended):\nAs git submodule As git clone As direct copy (from ZIP) Navigate to your themes folder in your Hugo site and use perform one of following scenarios.\n1. Install DocDock as git submodule DocDock will be added like a dependency repo to original project. When using CI tools like Netlify, Jenkins etc., submodule method is required, or you will get theme not found issues. Same applies when building site on remote server trough SSH.\nIf submodule is no-go, use 3rd option.\nOn your root of Hugo execute:\n$ git submodule add https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock Next initialize submodule for parent git repo:\n$ git submodule init $ git submodule update Now you are ready to add content and customize looks. Do not change any file inside theme directory.\nIf you want to freeze changes to DocDock theme itself and use still submodules, fork private copy of DocDock and use that as submodule. When you are ready to update theme, just pull changes from origin to your private fork.\n2. Install DocDock simply as git clone This method results that files are checked out locally, but won\u0026rsquo;t be visible from parent git repo. Probably you will build site locally with hugo command and use result from public/ on your own.\n$ git clone https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock 3. Install DocDock from ZIP All files from theme will be tracked inside parent repo, to update it, have to override files in theme. download following zip and extract inside themes/.\nhttps://github.com/vjeantet/hugo-theme-docdock/archive/master.zip Name of theme in next step will be hugo-theme-docdock-master, can rename as you wish.\nConfiguration"
-},
-{
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation-config/customize-style/",
 	"title": "Customize website look and feel",
 	"tags": [],
 	"description": "",
 	"content": "You can change the style and behavior of the theme without touching it.\ninject your own html, css or js into the page overide existing css or js with your own files No needs to copy the entire theme to customize some parts Bellow are solutions to avoid copying the entire theme into your own codebase.\nAdd custom CSS and JS or HTML into the \u0026lt;head\u0026gt; part of each page : Create a custom header partial layouts/partials/custom-head.html\ncontent/ layouts/ partials/ custom-head.html write your own content like (an example from @nzbart):\n\u0026lt;link rel=\u0026#34;stylesheet\u0026#34; href=\u0026#34;/css/custom.css\u0026#34;\u0026gt; \u0026lt;script src=\u0026#34;/js/custom.js\u0026#34;\u0026gt;\u0026lt;/script\u0026gt; Then overrode the style your want to change in static/css/custom.css (in this case, to avoid altering the casing of titles):\nh2 { text-transform: none; } And executed some additional JavaScript from static/js/custom.js (note that jQuery is already loaded by the theme):\nfunction tweakPage() { // make some changes here } $(tweakPage) now feel free to add the JS, CSS, HTML code you want :)\nAdd custom HTML at the end of the body part of each page : Create a custom-footer.html into a layouts/partials folder next to the content folder\ncontent/ layouts/ partials/ custom-footer.html now feel free to add the JS, CSS, HTML code you want :)\nOveride existing CSS or JS Create the matching file in your static folder, hugo will use yours instead of the theme\u0026rsquo;s one. Example :\ncreate a theme.css and place it into static/css/ to fully overide docdock\u0026rsquo;s theme.css\n"
+},
+{
+	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/installation/",
+	"title": "Installation",
+	"tags": [],
+	"description": "",
+	"content": "HUGO v0.32 minimum required to use this theme The following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you to train by following this great documentation for beginners.\nInstallation We assume that all changes to Hugo content and customizations are going to be tracked by git (GitHub, Bitbucket etc.). Develop locally, build on remote system.\nBefore start real work:\nInitialize Hugo Install DocDock theme Configure DocDock and Hugo Prepare empty Hugo site Create empty directory, which will be root of your Hugo project. Navigate there and let Hugo to create minimal required directory structure:\n$ hugo new site . AFTER that, initialize this as git directory where to track further changes\n$ git init Next, there are at least three ways to install DocDock (first recommended):\nAs git submodule As git clone As direct copy (from ZIP) Navigate to your themes folder in your Hugo site and use perform one of following scenarios.\n1. Install DocDock as git submodule DocDock will be added like a dependency repo to original project. When using CI tools like Netlify, Jenkins etc., submodule method is required, or you will get theme not found issues. Same applies when building site on remote server trough SSH.\nIf submodule is no-go, use 3rd option.\nOn your root of Hugo execute:\n$ git submodule add https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock Next initialize submodule for parent git repo:\n$ git submodule init $ git submodule update Now you are ready to add content and customize looks. Do not change any file inside theme directory.\nIf you want to freeze changes to DocDock theme itself and use still submodules, fork private copy of DocDock and use that as submodule. When you are ready to update theme, just pull changes from origin to your private fork.\n2. Install DocDock simply as git clone This method results that files are checked out locally, but won\u0026rsquo;t be visible from parent git repo. Probably you will build site locally with hugo command and use result from public/ on your own.\n$ git clone https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock 3. Install DocDock from ZIP All files from theme will be tracked inside parent repo, to update it, have to override files in theme. download following zip and extract inside themes/.\nhttps://github.com/vjeantet/hugo-theme-docdock/archive/master.zip Name of theme in next step will be hugo-theme-docdock-master, can rename as you wish.\nConfiguration"
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/shortcodes/",
@@ -126,8 +126,8 @@
 	"content": ""
 },
 {
-	"uri": "https://dalehassinger.github.io/vcommunity/aria-operations/homepage/",
-	"title": "Home page",
+	"uri": "https://dalehassinger.github.io/vcommunity/aria-operations/dashboards/",
+	"title": "Dashboards",
 	"tags": ["tag1", "tag2"],
 	"description": "",
 	"content": "To tell Hugo-theme-docdock to consider a page as homepage\u0026rsquo;s content, just create a content file named _index.md in content folder.\n"
@@ -147,13 +147,6 @@
 	"content": ""
 },
 {
-	"uri": "https://dalehassinger.github.io/vcommunity/aria-operations/page-images/",
-	"title": "About images",
-	"tags": [],
-	"description": "",
-	"content": "Images have a similar syntax to links but include a preceding exclamation point.\n![agence](https://github.com/vjeantet/vjeantet.fr/raw/master/static/images/sgthon/C.jpg) Resizing image Add HTTP parameters width and/or height to the link image to resize the image. Values are CSS values (default is auto).\n![Hackathon](https://github.com/vjeantet/vjeantet.fr/raw/master/static/images/sgthon/C.jpg?height=80px) Add CSS classes Add a HTTP classes parameter to the link image to add CSS classes. shadow and border are available but you could define other ones.\n![s](https://github.com/vjeantet/vjeantet.fr/raw/master/static/images/sgthon/C.jpg?classes=border,shadow) "
-},
-{
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-operations/myslide/",
 	"title": "My Slide ! fullscreen",
 	"tags": [],
@@ -161,11 +154,18 @@
 	"content": "In the morning Getting up Turn off alarm Get out of bed Breakfast Eat eggs Drink coffee In the evening Dinner Eat spaghetti Drink wine Going to sleep Get in bed Count sheep "
 },
 {
-	"uri": "https://dalehassinger.github.io/vcommunity/aria-operations/page-slide/",
-	"title": "Present a Slide",
+	"uri": "https://dalehassinger.github.io/vcommunity/aria-operations/reports/",
+	"title": "Reports",
 	"tags": [],
 	"description": "",
 	"content": "A basic md content page can be rendered as a reveal.js presentation full screen.\nYou can, also, embed presentation in a page as a small box, using the revealjs shortcode in your md file. Formating Use your common Markdown syntax you use in Hugo, don\u0026rsquo;t forget, you can put html tags too.\nSpecial syntax (in html comment) is available for adding attributes to Markdown elements. This is useful for fragments, amongst other things.\nPlease read the doc from hakimel\nOptions In the frontmatter of your page file, set type and revealOptions params\nYour content will be served as a fullscreen revealjs presentation and revealOptions will be used to ajust its behaviour.\n+++ title = \u0026quot;Test slide\u0026quot; type=\u0026quot;slide\u0026quot; theme = \u0026quot;league\u0026quot; [revealOptions] transition= 'concave' controls= true progress= true history= true center= true +++ read more about reveal options here\nSlide Delimiters When creating the content for your slideshow presentation within content markdown file you need to be able to distinguish between one slide and the next. This is achieved very simply using a convention within Markdown that indicates the start of each new slide.\nAs both horizontal and vertical slides are supported by reveal.js each has it\u0026rsquo;s own unique delimiter.\nTo denote the start of a horizontal slide simply add the following delimiter (dashes) in your Markdown:\n--- To denote the start of a vertical slide simply add the following delimiter (underscores) in your Markdown:\n___ By using a combination of horizontal and vertical slides you can customize the navigation within your slideshow presentation. Typically vertical slides are used to present information below a top-level horizontal slide.\nFor example, a very simple slideshow presentation can be created as follows\n+++ title = \u0026#34;test\u0026#34; date = \u0026#34;2017-04-24T18:36:24+02:00\u0026#34; type=\u0026#34;slide\u0026#34; theme = \u0026#34;league\u0026#34; [revealOptions] transition= \u0026#39;concave\u0026#39; controls= true progress= true history= true center= true +++ # In the morning ___ ## Getting up - Turn off alarm - Get out of bed ___ ## Breakfast - Eat eggs - Drink coffee --- # In the evening ___ ## Dinner - Eat spaghetti - Drink wine ___ ## Going to sleep - Get in bed - Count sheep click here to view this page rendered\n"
+},
+{
+	"uri": "https://dalehassinger.github.io/vcommunity/aria-operations/views/",
+	"title": "Views",
+	"tags": [],
+	"description": "",
+	"content": "Images have a similar syntax to links but include a preceding exclamation point.\n![agence](https://github.com/vjeantet/vjeantet.fr/raw/master/static/images/sgthon/C.jpg) Resizing image Add HTTP parameters width and/or height to the link image to resize the image. Values are CSS values (default is auto).\n![Hackathon](https://github.com/vjeantet/vjeantet.fr/raw/master/static/images/sgthon/C.jpg?height=80px) Add CSS classes Add a HTTP classes parameter to the link image to add CSS classes. shadow and border are available but you could define other ones.\n![s](https://github.com/vjeantet/vjeantet.fr/raw/master/static/images/sgthon/C.jpg?classes=border,shadow) "
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/shortcodes/alert/",
@@ -361,7 +361,7 @@
 	"title": "revealjs",
 	"tags": [],
 	"description": "present content as a reveal.js slide",
-	"content": "This shortcode will format the enclosed markdow to render it with reveal.js at runtime (client-side)\nRead more on revealjs github repo.\nUsage revealjs can use the following named parameters :\ntheme\ntransition\ncontrols\nprogress\nhistory\ncenter\nImportant Even if the enclosed content is a mardown, use `\u003c` shortcode notation instead of the `%` notation Content formating and slide delimiters read more on this here\nDemo # In the morning ___ ## Getting up - Turn off alarm - Get out of bed ___ ## Breakfast - Eat eggs - Drink coffee --- # In the evening ___ ## Dinner - Eat spaghetti - Drink wine ___ ## Going to sleep - Get in bed - Count sheep See it fullscreen Source : Show code ... {{\u0026lt;revealjs theme=\u0026#34;moon\u0026#34; progress=\u0026#34;true\u0026#34;\u0026gt;}} # In the morning ___ ## Getting up - Turn off alarm - Get out of bed ___ ## Breakfast - Eat eggs - Drink coffee --- # In the evening ___ ## Dinner - Eat spaghetti - Drink wine ___ ## Going to sleep - Get in bed - Count sheep {{\u0026lt;revealjs\u0026gt;}} click here to view raw content "
+	"content": ""
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation-config/customize-style/themestyle/",

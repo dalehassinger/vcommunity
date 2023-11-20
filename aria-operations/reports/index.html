@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="revised" content="2023-11-20T15:20:43 EST">
-<title>Tags :: </title>
+<title>Reports :: </title>
 <link rel="shortcut icon" href="/vcommunity/images/favicon.png" type="image/x-icon" />
 <link href="/vcommunity/css/nucleus.css" rel="stylesheet">
 <link href="/vcommunity/css/font-awesome.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
 
     
   </head>
-  <body data-url="/vcommunity/tags/">
+  <body data-url="/vcommunity/aria-operations/reports/">
     
       <header>
   <div class="logo">
@@ -352,7 +352,14 @@
     <option value="/vcommunity/aria-automation-config/" >
    Aria Automation Config</option>
     <option value="/vcommunity/aria-operations/" >
-   Aria Operations</option>
+   Aria Operations</option> 
+    <option value="/vcommunity/aria-operations/dashboards/" >
+   Dashboards</option>
+    <option value="/vcommunity/aria-operations/reports/"  selected>
+   Reports</option>
+    <option value="/vcommunity/aria-operations/views/" >
+   Views</option>
+  
     <option value="/vcommunity/shortcodes/" >
    Aria Operations for Logs</option>
 
@@ -368,168 +375,99 @@
       </div>
     
 
-    <h1>Tags</h1>
+    <h1>Reports</h1>
     
     
     
 
+<p>A basic md content page can be rendered as a reveal.js presentation full screen.</p>
 
+<div class="alert alert-info" role="alert">You can, also, <strong>embed presentation in a page</strong> as a small box, using the <a href="">revealjs</a> shortcode in your md file.</div>
 
-<div class="extra-pagination inner">
-<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
+<h2 id="formating">Formating</h2>
+<p>Use your common Markdown syntax you use in Hugo, don&rsquo;t forget, you can put html tags too.</p>
 
-</div>
+<div class="notices info" ><p><p>Special syntax (in html comment) is available for adding attributes to Markdown elements. This is useful for fragments, amongst other things.</p>
+</p></div>
 
+<p>Please read the <a href="https://github.com/hakimel/reveal.js/#instructions"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> doc from hakimel</a></p>
+<h2 id="options">Options</h2>
+<p>In the frontmatter of your page file, set <strong>type</strong> and <strong>revealOptions</strong> params</p>
+<p>Your content will be served as a fullscreen revealjs presentation and revealOptions will be used to ajust its behaviour.</p>
+<pre><code>+++
+title = &quot;Test slide&quot;
+type=&quot;slide&quot;
 
-   <article class="post tags">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/vcommunity/tags/aria-automation/">Aria Automation</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p> <a class="read-more" href="/vcommunity/tags/aria-automation/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
+theme = &quot;league&quot;
+[revealOptions]
+transition= 'concave'
+controls= true
+progress= true
+history= true
+center= true
++++
+</code></pre>
+<p><a href="https://github.com/hakimel/reveal.js/#configuration">read more about reveal options here</a></p>
+<h2 id="slide-delimiters">Slide Delimiters</h2>
+<p>When creating the content for your slideshow presentation within content markdown file you need to be able to distinguish between one slide and the next. This is achieved very simply using a  convention within Markdown that indicates the start of each new slide.</p>
+<p>As both horizontal and vertical slides are supported by reveal.js each has it&rsquo;s own unique delimiter.</p>
+<p>To denote the start of a horizontal slide simply add the following delimiter (dashes) in your Markdown:</p>
+<pre><code>---
+</code></pre>
+<p>To denote the start of a vertical slide simply add the following delimiter (underscores) in your Markdown:</p>
+<pre><code>___
+</code></pre>
+<p>By using a combination of horizontal and vertical slides you can customize the navigation within your slideshow presentation. Typically vertical slides are used to present information below a top-level horizontal slide.</p>
+<p>For example, a very simple slideshow presentation can be created as follows</p>
+<pre tabindex="0"><code>+++
 
-        
-        
+title = &#34;test&#34;
+date = &#34;2017-04-24T18:36:24+02:00&#34;
+type=&#34;slide&#34;
 
-    </footer>
-</article>
+theme = &#34;league&#34;
+[revealOptions]
+transition= &#39;concave&#39;
+controls= true
+progress= true
+history= true
+center= true
++++
 
-   <article class="post tags">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/vcommunity/tags/aria-automation-config/">Aria Automation Config</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p> <a class="read-more" href="/vcommunity/tags/aria-automation-config/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
+# In the morning
 
-        
-        
+___
 
-    </footer>
-</article>
+## Getting up
 
-   <article class="post tags">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/vcommunity/tags/aria-operations/">Aria Operations</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p> <a class="read-more" href="/vcommunity/tags/aria-operations/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
+- Turn off alarm
+- Get out of bed
 
-        
-        
+___
 
-    </footer>
-</article>
+## Breakfast
 
-   <article class="post tags">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/vcommunity/tags/aria-operations-for-logs/">Aria Operations for Logs</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p> <a class="read-more" href="/vcommunity/tags/aria-operations-for-logs/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
+- Eat eggs
+- Drink coffee
 
-        
-        
+---
 
-    </footer>
-</article>
+# In the evening
 
-   <article class="post tags">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/vcommunity/tags/dale-hassinger/">Dale Hassinger</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p> <a class="read-more" href="/vcommunity/tags/dale-hassinger/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
+___
 
-        
-        
+## Dinner
 
-    </footer>
-</article>
+- Eat spaghetti
+- Drink wine
 
-   <article class="post tags">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/vcommunity/tags/dashboard/">Dashboard</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p> <a class="read-more" href="/vcommunity/tags/dashboard/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
+___
 
-        
-        
+## Going to sleep
 
-    </footer>
-</article>
-
-   <article class="post tags">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/vcommunity/tags/tag1/">tag1</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p> <a class="read-more" href="/vcommunity/tags/tag1/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
-
-        
-        
-
-    </footer>
-</article>
-
-   <article class="post tags">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/vcommunity/tags/tag2/">tag2</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p> <a class="read-more" href="/vcommunity/tags/tag2/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
-
-        
-        
-
-    </footer>
-</article>
-
-
-<div style="margin-bottom:2rem"></div>
-
-<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 of 1</span>
-	
-</nav>
-
+- Get in bed
+- Count sheep
+</code></pre><p><a href=""><span class="glyphicon glyphicon-expand" aria-hidden="true"></span>click here to view this page rendered</a></p>
 
 
 
@@ -537,7 +475,8 @@
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-next" href="/vcommunity/about/" title="About this site" style="margin-right: 0px;"><label>About this site</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/vcommunity/aria-operations/dashboards/" title="Dashboards"> <i class="fa fa-chevron-left"></i><label>Dashboards</label></a>
+    <a class="nav nav-next" href="/vcommunity/aria-operations/views/" title="Views" style="margin-right: 0px;"><label>Views</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -552,7 +491,7 @@
 
     
     <div class="date">
-        <i class='fa fa-calendar'></i> Last update on 20/11/2023
+        <i class='fa fa-calendar'></i> Last update on 24/04/2017
     </div>
     
 

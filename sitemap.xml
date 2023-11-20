@@ -24,9 +24,9 @@
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/aria-automation/configuration/</loc>
   </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/aria-automation/installation/</loc>
-  </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/aria-automation-config/customize-style/</loc>
+  </url><url>
+    <loc>https://dalehassinger.github.io/vcommunity/aria-automation/installation/</loc>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/shortcodes/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
@@ -52,7 +52,7 @@
     <loc>https://dalehassinger.github.io/vcommunity/tags/</loc>
     <lastmod>2023-11-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/aria-operations/homepage/</loc>
+    <loc>https://dalehassinger.github.io/vcommunity/aria-operations/dashboards/</loc>
     <lastmod>2017-04-28T18:36:24+02:00</lastmod>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/tags/tag1/</loc>
@@ -61,13 +61,13 @@
     <loc>https://dalehassinger.github.io/vcommunity/tags/tag2/</loc>
     <lastmod>2017-04-28T18:36:24+02:00</lastmod>
   </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/aria-operations/page-images/</loc>
-    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
-  </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/aria-operations/myslide/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/aria-operations/page-slide/</loc>
+    <loc>https://dalehassinger.github.io/vcommunity/aria-operations/reports/</loc>
+    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
+  </url><url>
+    <loc>https://dalehassinger.github.io/vcommunity/aria-operations/views/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/shortcodes/alert/</loc>
