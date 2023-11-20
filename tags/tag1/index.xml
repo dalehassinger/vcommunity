@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tag1 on </title>
+    <link>/tags/tag1/</link>
+    <description>Recent content in tag1 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Apr 2017 18:36:24 +0200</lastBuildDate>
+    <atom:link href="/tags/tag1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Home page</title>
+      <link>/aria-operations/homepage/</link>
+      <pubDate>Fri, 28 Apr 2017 18:36:24 +0200</pubDate>
+      <guid>/aria-operations/homepage/</guid>
+      <description>To tell Hugo-theme-docdock to consider a page as homepage&amp;rsquo;s content, just create a content file named _index.md in content folder.</description>
+    </item>
+  </channel>
+</rss>
