@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Aria Automation on </title>
-    <link>/tags/aria-automation/</link>
+    <link>https://dalehassinger.github.io/vcommunity/tags/aria-automation/</link>
     <description>Recent content in Aria Automation on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 20 Nov 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/aria-automation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dalehassinger.github.io/vcommunity/tags/aria-automation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About this site</title>
-      <link>/about/</link>
+      <link>https://dalehassinger.github.io/vcommunity/about/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>/about/</guid>
+      <guid>https://dalehassinger.github.io/vcommunity/about/</guid>
       <description>This Site was created to share items with the vCommunity.
 hugo generate lunrjs index.json at the root of `public` folder if the site only has one language or within each language subfolder. When you build the site with `hugo server`, hugo generates it internally and of course it don&#39;t show up in the filesystem </description>
     </item>
