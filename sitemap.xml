@@ -11,11 +11,20 @@
     <loc>https://dalehassinger.github.io/vcommunity/aria-operations/</loc>
     <lastmod>2023-11-20T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://dalehassinger.github.io/vcommunity/vcommunity/</loc>
+    <lastmod>2023-11-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dalehassinger.github.io/vcommunity/vcommunity/vmware-community-podcast/</loc>
+    <lastmod>2023-11-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/aria-automation-config/</loc>
     <lastmod>2017-04-29T18:36:24+02:00</lastmod>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/aria-automation-config/extramenu/</loc>
     <lastmod>2017-04-29T18:36:24+02:00</lastmod>
+  </url><url>
+    <loc>https://dalehassinger.github.io/vcommunity/aria-operations-for-logs/alerts/</loc>
+    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/aria-automation-config/logo/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
@@ -28,7 +37,7 @@
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/aria-automation/installation/</loc>
   </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/shortcodes/</loc>
+    <loc>https://dalehassinger.github.io/vcommunity/aria-operations-for-logs/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/tags/aria-automation/</loc>
@@ -70,15 +79,7 @@
     <loc>https://dalehassinger.github.io/vcommunity/aria-operations/views/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/shortcodes/alert/</loc>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/shortcodes/attachments/</loc>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/shortcodes/button/</loc>
-  </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/categories/</loc>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/shortcodes/children/</loc>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/credits/</loc>
   </url><url>
@@ -86,45 +87,9 @@
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/showcase/</loc>
   </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/shortcodes/excerpt/</loc>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/shortcodes/excerpt-include/</loc>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/shortcodes/expand/</loc>
-  </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/_footer/</loc>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/_header/</loc>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/shortcodes/icon/</loc>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/shortcodes/mermaid/</loc>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/shortcodes/notice/</loc>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/shortcodes/children/children-1/</loc>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/shortcodes/children/children-1/children-1-1/</loc>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/shortcodes/children/children-1/children-1-1/children-1-1-1/</loc>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/</loc>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/</loc>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/shortcodes/children/children-2/</loc>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/shortcodes/children/children-3/</loc>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/shortcodes/children/children-4/</loc>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/shortcodes/children/test/</loc>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/shortcodes/children/children-2/test3/</loc>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/shortcodes/panel/</loc>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/shortcodes/revealjs/</loc>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/aria-automation-config/customize-style/themestyle/</loc>
   </url><url>

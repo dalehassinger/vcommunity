@@ -23,5 +23,19 @@
       <description>This Site was created to share items with the vCommunity.
 hugo generate lunrjs index.json at the root of `public` folder if the site only has one language or within each language subfolder. When you build the site with `hugo server`, hugo generates it internally and of course it don&#39;t show up in the filesystem </description>
     </item>
+    <item>
+      <title>vCommunity</title>
+      <link>https://dalehassinger.github.io/vcommunity/vcommunity/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://dalehassinger.github.io/vcommunity/vcommunity/</guid>
+      <description>vCommunity:</description>
+    </item>
+    <item>
+      <title>VMware CMTY Podcast</title>
+      <link>https://dalehassinger.github.io/vcommunity/vcommunity/vmware-community-podcast/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://dalehassinger.github.io/vcommunity/vcommunity/vmware-community-podcast/</guid>
+      <description>Podcasts:</description>
+    </item>
   </channel>
 </rss>

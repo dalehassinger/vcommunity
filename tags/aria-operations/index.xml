@@ -31,5 +31,19 @@ hugo generate lunrjs index.json at the root of `public` folder if the site only 
       <description>Hugo-theme-docdock defines two types of pages. Default and Slide.
 Default is the common page like the current one you are reading. Slide is a page that use the full screen to display its markdown content as a reveals.js presentation. HomePage is a special content that will be displayed as home page content. To tell Hugo-theme-docdock to consider a page as a slide, just add a type=&amp;quot;slide&amp;quot;in then frontmatter of your file.</description>
     </item>
+    <item>
+      <title>vCommunity</title>
+      <link>https://dalehassinger.github.io/vcommunity/vcommunity/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://dalehassinger.github.io/vcommunity/vcommunity/</guid>
+      <description>vCommunity:</description>
+    </item>
+    <item>
+      <title>VMware CMTY Podcast</title>
+      <link>https://dalehassinger.github.io/vcommunity/vcommunity/vmware-community-podcast/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://dalehassinger.github.io/vcommunity/vcommunity/vmware-community-podcast/</guid>
+      <description>Podcasts:</description>
+    </item>
   </channel>
 </rss>

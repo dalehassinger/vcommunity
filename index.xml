@@ -34,33 +34,6 @@ Tip : you can add a image, a combobox with links to other documentation&amp;hell
       <description>In the morning Getting up Turn off alarm Get out of bed Breakfast Eat eggs Drink coffee In the evening Dinner Eat spaghetti Drink wine Going to sleep Get in bed Count sheep </description>
     </item>
     <item>
-      <title>alert</title>
-      <link>https://dalehassinger.github.io/vcommunity/shortcodes/alert/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/shortcodes/alert/</guid>
-      <description>The alert shortcode allow you to highlight information in your page. They create a colored box surrounding your text, like this:
-This is an alert ! Usage Parameter Default Description theme info success, info,warning,danger Tips : setting only the theme as argument works too : {{%alert warning%}} instead of {{%alert theme=&amp;quot;warning&amp;quot;%}}
-Basic examples {{% alert theme=&amp;quot;info&amp;quot; %}}**this** is a text{{% /alert %}} {{% alert theme=&amp;quot;success&amp;quot; %}}**Yeahhh !** is a text{{% /alert %}} {{% alert theme=&amp;quot;warning&amp;quot; %}}**Be carefull** is a text{{% /alert %}} {{% alert theme=&amp;quot;danger&amp;quot; %}}**Beware !</description>
-    </item>
-    <item>
-      <title>attachments</title>
-      <link>https://dalehassinger.github.io/vcommunity/shortcodes/attachments/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/shortcodes/attachments/</guid>
-      <description>The Attachments shortcode displays a list of files attached to a page. Example : Attachments BachGavotteShort.mp3 (357 kB) Carroll_AliceAuPaysDesMerveilles.pdf (175 kB) adivorciarsetoca00cape.pdf (361 kB) hugo.png (17 kB) movieselectricsheep-flock-244-32500-2.mp4 (340 kB) Usage The shortcurt lists files found in a specific folder. Currently, it support two implementations for pages
-If your page is a markdown file, attachements must be place in a folder named like your page and ending with .files.
-content _index.</description>
-    </item>
-    <item>
-      <title>button</title>
-      <link>https://dalehassinger.github.io/vcommunity/shortcodes/button/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/shortcodes/button/</guid>
-      <description>Display an actionable button in your page.
-This is a warning button Usage Parameter Default Description href &amp;quot;&amp;quot; The location href to link to align &amp;ldquo;center&amp;rdquo; horizontal align button on page theme primary default, primary , success,info,warning,danger The inner text you place in short code will be displayed as the button text
-Demo {{&amp;lt; button href=&amp;quot;https://google.com&amp;quot; &amp;gt;}} go to google {{&amp;lt; /button &amp;gt;}} {{&amp;lt; button href=&amp;quot;https://google.com&amp;quot; theme=&amp;quot;success&amp;quot; &amp;gt;}} Success {{&amp;lt; /button &amp;gt;}} {{&amp;lt; button href=&amp;quot;https://google.</description>
-    </item>
-    <item>
       <title>Credits</title>
       <link>https://dalehassinger.github.io/vcommunity/credits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -83,29 +56,6 @@ hide Next / Prev Chevrons [params] disableNavChevron = true hide Search box in s
       <description>https://invincible.site/ by @shazic https://bitfan.io/ by @vjeantet </description>
     </item>
     <item>
-      <title>excerpt</title>
-      <link>https://dalehassinger.github.io/vcommunity/shortcodes/excerpt/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/shortcodes/excerpt/</guid>
-      <description>The Excerpt shortcode is used to mark a part of a page&amp;rsquo;s content for re-use. Defining an excerpt enables other shortcodes, such as the excerpt-include shortcode, to display the marked content elsewhere.
-You can only define one excerpt per page. In other words, you can only add the Excerpt shortcode once to a page. Usage Parameter Default Description hidden &amp;ldquo;false&amp;rdquo; Controls whether the page content contained in the Excerpt shortcode placeholder is displayed on the page.</description>
-    </item>
-    <item>
-      <title>excerpt-include</title>
-      <link>https://dalehassinger.github.io/vcommunity/shortcodes/excerpt-include/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/shortcodes/excerpt-include/</guid>
-      <description>The Excerpt Include shortcode is used to display &amp;rsquo;excerpted&amp;rsquo; (that is, a segment of) content from one page in another. Before you can use this shortcode, the excerpt must have been defined using the Excerpt shortcode. Note that you can have more than one Excerpt Include shortcode on a page (although you can have only one Excerpt shortcode on a page). Usage Parameter Default Description filename required Type the filename of the page that contains the excerpt to be displayed.</description>
-    </item>
-    <item>
-      <title>expand</title>
-      <link>https://dalehassinger.github.io/vcommunity/shortcodes/expand/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/shortcodes/expand/</guid>
-      <description>The Expand shortcode displays an expandable/collapsible section of text on your page. Here is an example
-Expand me... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
-    </item>
-    <item>
       <title>Footer</title>
       <link>https://dalehassinger.github.io/vcommunity/_footer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -118,64 +68,6 @@ Expand me... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://dalehassinger.github.io/vcommunity/_header/</guid>
       <description>Automation | Monitoring | Logging</description>
-    </item>
-    <item>
-      <title>icon</title>
-      <link>https://dalehassinger.github.io/vcommunity/shortcodes/icon/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/shortcodes/icon/</guid>
-      <description>Display an icon like It uses :
-glyphicons library (bootstrap).more info here fontawesome library more info here This icon shortcode will display an icon in your page.
-Usage Parameter Default Description name required name of icon (see bellow) size none size of icon, medium, xx-small, x-small, small, large, x-large, xx-large, 11px, 2em, 20%&amp;hellip;. Tips : setting only the name as argument works too : {{&amp;lt;icon film&amp;gt;}} instead of {{&amp;lt;icon name=&amp;quot;film&amp;quot;&amp;gt;}}</description>
-    </item>
-    <item>
-      <title>mermaid</title>
-      <link>https://dalehassinger.github.io/vcommunity/shortcodes/mermaid/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/shortcodes/mermaid/</guid>
-      <description>Flowchart example Show code ... {{}} graph LR; A[Hard edge] --&gt;|Link text| B(Round edge) B --&gt; C{Decision} C --&gt;|One| D[Result one] C --&gt;|Two| E[Result two] {{&lt; /mermaid &gt;}} graph LR; A[Hard edge] --&gt;|Link text| B(Round edge) B --&gt; C{Decision} C --&gt;|One| D[Result one] C --&gt;|Two| E[Result two] With sub-graphs and some style Show code... {{}} graph LR; X --&gt; Y linkStyle 0 stroke:#f00,stroke-width:4px; Y --&gt; Z Z --&gt; X linkStyle 1,2 interpolate basis stroke:#0f0,stroke-width:2px; X --&gt; A1 subgraph right A2 --&gt; B2 B2 --&gt; C2 end subgraph left A1 --&gt; B1 B1 --&gt; C1 end C1 --&gt; X Z --&gt; A2 C2 --&gt; Z style Y fill:#f9f,stroke:#333,stroke-width:4px classDef left fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5 class A1,B1,C1 left {{&amp;lt; /mermaid &amp;gt;}} graph LR; X --&gt; Y linkStyle 0 stroke:#f00,stroke-width:4px; Y --&gt; Z Z --&gt; X linkStyle 1,2 interpolate basis stroke:#0f0,stroke-width:2px; X --&gt; A1 subgraph right A2 --&gt; B2 B2 --&gt; C2 end subgraph left A1 --&gt; B1 B1 --&gt; C1 end C1 --&gt; X Z --&gt; A2 C2 --&gt; Z style Y fill:#f9f,stroke:#333,stroke-width:4px classDef left fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5 class A1,B1,C1 left Sequence example Show code .</description>
-    </item>
-    <item>
-      <title>notice</title>
-      <link>https://dalehassinger.github.io/vcommunity/shortcodes/notice/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/shortcodes/notice/</guid>
-      <description>The notice shortcode shows 4 types of disclaimers to help you structure your page.
-Note {{% notice note %}} A notice disclaimer {{% /notice %}} renders as
-A notice disclaimer
-Info {{% notice info %}} An information disclaimer {{% /notice %}} renders as
-An information disclaimer
-Tip {{% notice tip %}} A tip disclaimer {{% /notice %}} renders as
-A tip disclaimer
-Warning {{% notice warning %}} An warning disclaimer {{% /notice %}} renders as</description>
-    </item>
-    <item>
-      <title>page test</title>
-      <link>https://dalehassinger.github.io/vcommunity/shortcodes/children/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/shortcodes/children/test/</guid>
-      <description>This is a test demo child page</description>
-    </item>
-    <item>
-      <title>page test 3</title>
-      <link>https://dalehassinger.github.io/vcommunity/shortcodes/children/children-2/test3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/shortcodes/children/children-2/test3/</guid>
-      <description>This is a test 3 demo child page</description>
-    </item>
-    <item>
-      <title>panel</title>
-      <link>https://dalehassinger.github.io/vcommunity/shortcodes/panel/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/shortcodes/panel/</guid>
-      <description>The panel shortcodeAllow you to highlight information or put it in a box. They create a colored box surrounding your text Usage Parameter Default Description header none The title of the panel. If specified, this title will be displayed in its own header row. footer none the footer of the panel. If specified, this text will be displayed in its own row theme primary default,primary,info,success,warning,danger Basic example By default :</description>
-    </item>
-    <item>
-      <title>revealjs</title>
-      <link>https://dalehassinger.github.io/vcommunity/shortcodes/revealjs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/shortcodes/revealjs/</guid>
-      <description></description>
     </item>
     <item>
       <title>Theme styles</title>
