@@ -20,8 +20,16 @@
       <link>https://dalehassinger.github.io/vcommunity/about/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://dalehassinger.github.io/vcommunity/about/</guid>
-      <description>This Site was created to share items with the vCommunity.
-hugo generate lunrjs index.json at the root of `public` folder if the site only has one language or within each language subfolder. When you build the site with `hugo server`, hugo generates it internally and of course it don&#39;t show up in the filesystem </description>
+      <description>This Site was created to share items with the vCommunity.</description>
+    </item>
+    <item>
+      <title>Action Constants and Secrets</title>
+      <link>https://dalehassinger.github.io/vcommunity/aria-automation/assembler/action-constant-and-secrets/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://dalehassinger.github.io/vcommunity/aria-automation/assembler/action-constant-and-secrets/</guid>
+      <description>VMware Aria Automation | Action Constants and Secrets: VMware Aria Automation 8.14 was used for this Blog Post. When new versions of VMware Aria Automation are released, the code may need to be changed.
+All the source code for this Blog is saved in my GitHub Repository. Click on the links within the blog to access the code.
+I wanted to share how I use Action Constants and Secrets within VMware Aria Automation.</description>
     </item>
     <item>
       <title>PowerCLI</title>

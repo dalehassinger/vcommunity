@@ -11,7 +11,21 @@
 	"title": "About this site",
 	"tags": ["Aria Operations", "Aria Operations for Logs", "Aria Automation", "Aria Automation Config", "Dale Hassinger"],
 	"description": "",
-	"content": "This Site was created to share items with the vCommunity.\nhugo generate lunrjs index.json at the root of `public` folder if the site only has one language or within each language subfolder. When you build the site with `hugo server`, hugo generates it internally and of course it don't show up in the filesystem "
+	"content": "This Site was created to share items with the vCommunity.\n"
+},
+{
+	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/assembler/action-constant-and-secrets/",
+	"title": "Action Constants and Secrets",
+	"tags": ["Aria Automation", "Action Constants", "Secrets", "Dale Hassinger"],
+	"description": "",
+	"content": "VMware Aria Automation | Action Constants and Secrets: VMware Aria Automation 8.14 was used for this Blog Post. When new versions of VMware Aria Automation are released, the code may need to be changed.\nAll the source code for this Blog is saved in my GitHub Repository. Click on the links within the blog to access the code.\nI wanted to share how I use Action Constants and Secrets within VMware Aria Automation. Action Constants are a great to have a variable that can be used with many Actions where the value may change. Instead of having to edit 10s or 100s of Actions, you change One Action Constant and all the Actions are updated instantly. Main reason to use Secrets is to keep the values of Passwords out of the code! Plus, like Action Constants, if a Password would change, all you need to do is change one Secret and all your Actions and Templates are automatically Updated. Secrets can also be used in the yaml code of Templates.\nAction Constants Action Constants Use Cases:\nvCenter Username vCenter FQDN VMware Aria Automation Config Username VMware Aria Automation Config FQDN salt master FQDN Any value used in Actions that may change from time to time To access Action Constants: Assembler/Extensibility/Actions/Actions Constants\nYou will see the Action Constants Names and Values. How to use Action Constants and Secrets with an Action:\nAdd the Action Constants and Secrets used within the Action in the Default inputs section. To use a Action Constant value within the Action PowerShell code use $inputs.\u0026ldquo;Action Constant\u0026rdquo; To use a Secret value within the Action PowerShell code use $context.getSecret($inputs.\u0026ldquo;Secret Name\u0026rdquo;) In the example code, review how I am connecting to the vCenter. No hard coded Username, Password or vCenter FQDN. If any of these values would change, I would never need to edit the Action, only the Action Constants and Secret. Link to code | GitHub Repository Secrets Secrets Use Cases:\nPasswords Any value you don\u0026rsquo;t want displayed in plain text within your code To access Secrets: Assembler/Infrastructure/Secrets/Secrets\nYou will see the Secret Names and Description only. You can never see the Secret value after you create it. If you think the value is not correct you need to re-enter the value. How to use Secrets with an Template:\nAdd code to the template yaml that is like this: password: \u0026lsquo;${secret.UbuntuPassword}\u0026rsquo; See Screen Shot Links to resources about Actions Constants and Secrets: Secret Automation Assembler properties How can I create extensibility action constants When I write my blogs, I always say there are many ways to accomplish the same task. This article is just one way that you could accomplish this task. I am showing what I felt was a good way to complete the use case but every organization/environment will be different. There is no right or wrong way to complete the tasks in this article. "
+},
+{
+	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/",
+	"title": "Aria Automation",
+	"tags": [],
+	"description": "",
+	"content": "Testing pics and YouTube Links.\n"
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-operations/",
@@ -19,6 +33,13 @@
 	"tags": ["Aria Operations", "Dashboard"],
 	"description": "",
 	"content": "Hugo-theme-docdock defines two types of pages. Default and Slide.\nDefault is the common page like the current one you are reading. Slide is a page that use the full screen to display its markdown content as a reveals.js presentation. HomePage is a special content that will be displayed as home page content. To tell Hugo-theme-docdock to consider a page as a slide, just add a type=\u0026quot;slide\u0026quot;in then frontmatter of your file. read more on page as slide\nHugo-theme-docdock provides archetypes to help you create this kind of pages.\nFront Matter Each Hugo page has to define a Front Matter in yaml, toml or json.\nHugo-theme-docdock uses the following parameters on top of the existing ones :\n+++ # Type of content, set \u0026quot;slide\u0026quot; to display it fullscreen with reveal.js type=\u0026quot;page\u0026quot; # Creator's Display name creatordisplayname = \u0026quot;Valere JEANTET\u0026quot; # Creator's Email creatoremail = \u0026quot;valere.jeantet@gmail.com\u0026quot; # LastModifier's Display name lastmodifierdisplayname = \u0026quot;Valere JEANTET\u0026quot; # LastModifier's Email lastmodifieremail = \u0026quot;valere.jeantet@gmail.com\u0026quot; +++ Ordering Hugo provides a flexible way to handle order for your pages.\nThe simplest way is to use weight parameter in the front matter of your page.\nRead more on content organization\n"
+},
+{
+	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/assembler/",
+	"title": "Assembler",
+	"tags": [],
+	"description": "",
+	"content": "When building the website, you can set a theme by using --theme option. We suggest you to edit your configuration file and set the theme by default. Example with config.toml format.\nImport sample config from sample site to Hugo root:\n$ cp themes/docdock/exampleSite/config.toml . Change following config.toml line as needed, depending on method above:\ntheme = \u0026#34;\u0026lt;hugo-theme-docdock-dir-name\u0026gt;\u0026#34; Comment out following line, so default themes/ will be used:\n# themesdir = \u0026#34;../..\u0026#34; Activate search If not already present, add the follow lines to the config.toml file.\n[outputs] home = [ \u0026#34;HTML\u0026#34;, \u0026#34;RSS\u0026#34;, \u0026#34;JSON\u0026#34;] LUNRJS search index file will be generated on content changes.\n(Bonus) Create empty file .gitkeep inside public/ and add following to .gitignore. This way it will keep repo smaller and won\u0026rsquo;t bring build result files and errors to remote checkout places:\n/public/* !/public/.gitkeep Preview site $ hugo server to browse site on http://localhost:1313\nYour website\u0026rsquo;s content"
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/powercli/",
@@ -56,25 +77,11 @@
 	"content": "VMware Aria Operations for Logs | Alerts:\n"
 },
 {
-	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/",
-	"title": "Aria Automation",
-	"tags": [],
-	"description": "",
-	"content": "Testing pics and YouTube Links.\n"
-},
-{
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation-config/",
 	"title": "Aria Automation Config",
 	"tags": [],
 	"description": "",
 	"content": "Aria Automation Config:\n"
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/assembler/",
-	"title": "Assembler",
-	"tags": [],
-	"description": "",
-	"content": "When building the website, you can set a theme by using --theme option. We suggest you to edit your configuration file and set the theme by default. Example with config.toml format.\nImport sample config from sample site to Hugo root:\n$ cp themes/docdock/exampleSite/config.toml . Change following config.toml line as needed, depending on method above:\ntheme = \u0026#34;\u0026lt;hugo-theme-docdock-dir-name\u0026gt;\u0026#34; Comment out following line, so default themes/ will be used:\n# themesdir = \u0026#34;../..\u0026#34; Activate search If not already present, add the follow lines to the config.toml file.\n[outputs] home = [ \u0026#34;HTML\u0026#34;, \u0026#34;RSS\u0026#34;, \u0026#34;JSON\u0026#34;] LUNRJS search index file will be generated on content changes.\n(Bonus) Create empty file .gitkeep inside public/ and add following to .gitignore. This way it will keep repo smaller and won\u0026rsquo;t bring build result files and errors to remote checkout places:\n/public/* !/public/.gitkeep Preview site $ hugo server to browse site on http://localhost:1313\nYour website\u0026rsquo;s content"
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/orchestrator/",
@@ -110,6 +117,13 @@
 	"tags": [],
 	"description": "",
 	"content": "VMware Aria Operations for Logs:\n"
+},
+{
+	"uri": "https://dalehassinger.github.io/vcommunity/tags/action-constants/",
+	"title": "Action Constants",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/tags/aria-automation/",
@@ -149,6 +163,13 @@
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/tags/dashboard/",
 	"title": "Dashboard",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://dalehassinger.github.io/vcommunity/tags/secrets/",
+	"title": "Secrets",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -208,20 +229,6 @@
 	"tags": [],
 	"description": "",
 	"content": ""
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/credits/",
-	"title": "Credits",
-	"tags": [],
-	"description": "contributors and packages used by hugo-theme-docdock",
-	"content": "github contributors @vjeantet 247 commits @matcornic 45 commits @W-Floyd 24 commits @Pilskalns 24 commits @lierdakil 16 commits @Marthym 13 commits @gwleclerc 9 commits @jose-oc 8 commits @siamkreative 6 commits @Xipas 5 commits @FMuro 2 commits @joepvd 2 commits @EnigmaCurry 2 commits @Yoann-M 2 commits @aral 2 commits @adamlamar 1 commits @byzheng 1 commits @zivbk1 1 commits @danielfbm 1 commits @damoon 1 commits @vielmetti 1 commits @erikjasiak 1 commits @giuliov 1 commits @farmergreg 1 commits @JOduMonT 1 commits @tarpdalton 1 commits @jamestharpe 1 commits @JohnBlood 1 commits @kamilchm 1 commits @lgfischer 1 commits @ripienaar 1 commits @rsanderscybraics 1 commits @shazic 1 commits @viertaxa 1 commits @uweschaefer 1 commits @rabadiw 1 commits @wshayes 1 commits @eyoder 1 commits @ivan-danilov 1 commits @karlmacklin 1 commits @petzi53 1 commits @remi31000 1 commits @tonivj5 1 commits Other contribution @bep supports and advices @facette.io Flex style based on facette documentation theme, Thanks to @vbatoufflet Packages and libraries Bootstrap - front-end framework mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services\u0026hellip; JavaScript-autoComplete - An extremely lightweight and powerful vanilla JavaScript completion suggester. clipboard.js - copy text to clipboard highlight.js - Javascript syntax highlighter modernizr - A JavaScript toolkit that allows web developers to use new CSS3 and HTML5 features while maintaining a fine level of control over browsers that don\u0026rsquo;t support reveal-js - The HTML Presentation Framework Tooling Netlify - Continuous deployement and hosting of this documentation Hugo "
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/showcase/",
-	"title": "Docdock-built Sites",
-	"tags": [],
-	"description": "Hugo-built Sites with docdock theme",
-	"content": "https://invincible.site/ by @shazic https://bitfan.io/ by @vjeantet "
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/_footer/",

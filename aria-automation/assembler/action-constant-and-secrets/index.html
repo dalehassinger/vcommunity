@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="revised" content="2023-11-21T14:29:12 EST">
-<title>Orchestrator :: </title>
+<title>Action Constants and Secrets :: </title>
 <link rel="shortcut icon" href="/vcommunity/images/favicon.png" type="image/x-icon" />
 <link href="/vcommunity/css/nucleus.css" rel="stylesheet">
 <link href="/vcommunity/css/font-awesome.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
 
     
   </head>
-  <body data-url="/vcommunity/aria-automation/orchestrator/">
+  <body data-url="/vcommunity/aria-automation/assembler/action-constant-and-secrets/">
     
       <header>
   <div class="logo">
@@ -214,8 +214,11 @@
     <option value="/vcommunity/aria-automation/" >
    Aria Automation</option> 
     <option value="/vcommunity/aria-automation/assembler/" >
-   Assembler</option>
-    <option value="/vcommunity/aria-automation/orchestrator/"  selected>
+   Assembler</option> 
+    <option value="/vcommunity/aria-automation/assembler/action-constant-and-secrets/"  selected>
+   Action Constants and Secrets</option>
+  
+    <option value="/vcommunity/aria-automation/orchestrator/" >
    Orchestrator</option>
     <option value="/vcommunity/aria-automation/service-broker/" >
    Service Broker</option>
@@ -245,60 +248,86 @@
       </div>
     
 
-    <h1>Orchestrator</h1>
+    <h1>Action Constants and Secrets</h1>
     
     
     
 
-<div class="alert alert-warning" role="alert">HUGO <strong>v0.32</strong> minimum required to use this theme</div>
+<h5 id="vmware-aria-automation--action-constants-and-secrets">VMware Aria Automation | Action Constants and Secrets:</h5>
+<p>VMware Aria Automation 8.14 was used for this Blog Post. When new versions of VMware Aria Automation are released, the code may need to be changed.</p>
+<p>All the source code for this Blog is saved in my GitHub Repository. Click on the links within the blog to access the code.</p>
+<hr>
+<p>I wanted to share how I use <strong>Action Constants</strong> and <strong>Secrets</strong> within VMware Aria Automation. <strong>Action Constants</strong> are a great to have a variable that can be used with many Actions where the value may change. Instead of having to edit 10s or 100s of Actions, you change One Action Constant and all the Actions are updated instantly. Main reason to use <strong>Secrets</strong> is to keep the values of Passwords out of the code! Plus, like Action Constants, if a Password would change, all you need to do is change one Secret and all your Actions and Templates are automatically Updated. Secrets can also be used in the yaml code of Templates.</p>
+<hr>
+<h6 id="action-constants">Action Constants</h6>
+<p><strong>Action Constants Use Cases:</strong></p>
+<ul>
+<li>vCenter Username</li>
+<li>vCenter FQDN</li>
+<li>VMware Aria Automation Config Username</li>
+<li>VMware Aria Automation Config FQDN</li>
+<li>salt master FQDN</li>
+<li>Any value used in Actions that may change from time to time</li>
+</ul>
+<p><strong>To access Action Constants: Assembler/Extensibility/Actions/Actions Constants</strong></p>
+<ul>
+<li>You will see the Action Constants Names and Values.</li>
+</ul>
+<hr>
+<p><img src="./ActionConstants-02.png?classes=border,shadow" alt="Click to see Larger Image"></p>
+<hr>
+<p><strong>How to use Action Constants and Secrets with an Action:</strong></p>
+<ul>
+<li>Add the Action Constants and Secrets used within the Action in the Default inputs section.</li>
+<li>To use a Action Constant value within the Action PowerShell code use $inputs.&ldquo;Action Constant&rdquo;</li>
+<li>To use a Secret value within the Action PowerShell code use $context.getSecret($inputs.&ldquo;Secret Name&rdquo;)</li>
+<li>In the example code, review how I am connecting to the vCenter. No hard coded Username, Password or vCenter FQDN. If any of these values would change, I would never need to edit the Action, only the Action Constants and Secret.</li>
+<li><a href="https://github.com/dalehassinger/unlocking-the-potential/tree/main/VMware-Aria-Automation/Action-Constants-and-Secrets">Link to code | GitHub Repository</a></li>
+</ul>
+<hr>
+<p><img src="./ActionConstants-01.png?classes=border,shadow" alt="Click to see Larger Image"></p>
+<hr>
+<h6 id="secrets">Secrets</h6>
+<p><strong>Secrets Use Cases:</strong></p>
+<ul>
+<li>Passwords</li>
+<li>Any value you don&rsquo;t want displayed in plain text within your code</li>
+</ul>
+<p><strong>To access Secrets: Assembler/Infrastructure/Secrets/Secrets</strong></p>
+<ul>
+<li>You will see the Secret Names and Description only.</li>
+<li>You can never see the Secret value after you create it. If you think the value is not correct you need to re-enter the value.</li>
+</ul>
+<hr>
+<p><img src="./ActionConstants-03.png?classes=border,shadow" alt="Click to see Larger Image"></p>
+<hr>
+<p><strong>How to use Secrets with an Template:</strong></p>
+<ul>
+<li>Add code to the template yaml that is like this: password: &lsquo;${secret.UbuntuPassword}&rsquo;</li>
+<li>See Screen Shot</li>
+</ul>
+<hr>
+<p><img src="./ActionConstants-04.png?classes=border,shadow" alt="Click to see Larger Image"></p>
+<hr>
+<h6 id="links-to-resources-about-actions-constants-and-secrets">Links to resources about Actions Constants and Secrets:</h6>
+<ul>
+<li><a href="https://docs.vmware.com/en/VMware-Aria-Automation/SaaS/Using-Automation-Assembler/GUID-895A8127-CC67-4A53-B633-879F373E7606.html">Secret Automation Assembler properties</a></li>
+<li><a href="https://docs.vmware.com/en/VMware-Aria-Automation/SaaS/Using-Automation-Assembler/GUID-7E6145AB-74EC-492F-9FA9-8D07739519D4.html">How can I create extensibility action constants</a></li>
+</ul>
+<hr>
 
-<p>The following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you to train by following this <a href="https://gohugo.io/overview/quickstart/">great documentation for beginners</a>.</p>
-<h2 id="installation">Installation</h2>
-<p>We assume that all changes to Hugo content and customizations are going to be tracked by git (GitHub, Bitbucket etc.). Develop locally, build on remote system.</p>
-<p>Before start real work:</p>
-<ol>
-<li>Initialize Hugo</li>
-<li>Install DocDock theme</li>
-<li>Configure DocDock and Hugo</li>
-</ol>
-<h3 id="prepare-empty-hugo-site">Prepare empty Hugo site</h3>
-<p>Create empty directory, which will be root of your Hugo project. Navigate there and let Hugo to create minimal required directory structure:</p>
-<pre tabindex="0"><code>$ hugo new site .
-</code></pre><p>AFTER that, initialize this as git directory where to track further changes</p>
-<pre tabindex="0"><code>$ git init
-</code></pre><p>Next, there are at least three ways to install DocDock (first recommended):</p>
-<ol>
-<li><strong>As git submodule</strong></li>
-<li>As git clone</li>
-<li>As direct copy (from ZIP)</li>
-</ol>
-<p>Navigate to your themes folder in your Hugo site and use perform one of following scenarios.</p>
-<h3 id="1-install-docdock-as-git-submodule">1. Install DocDock as git submodule</h3>
-<p>DocDock will be added like a dependency repo to original project. When using CI tools like Netlify, Jenkins etc., submodule method is required, or you will get <code>theme not found</code> issues. Same applies when building site on remote server trough SSH.</p>
-<p>If submodule is no-go, use 3rd option.</p>
-<p>On your root of Hugo execute:</p>
-<pre tabindex="0"><code>$ git submodule add https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock
-</code></pre><p>Next initialize submodule for parent git repo:</p>
-<pre tabindex="0"><code>$ git submodule init
-$ git submodule update
-</code></pre><p>Now you are ready to add content and customize looks. Do not change any file inside theme directory.</p>
-<p>If you want to freeze changes to DocDock theme itself and use still submodules, fork private copy of DocDock and use that as submodule. When you are ready to update theme, just pull changes from origin to your private fork.</p>
-<h3 id="2-install-docdock-simply-as-git-clone">2. Install DocDock simply as git clone</h3>
-<p>This method results that files are checked out locally, but won&rsquo;t be visible from parent git repo. Probably you will build site locally with <code>hugo</code> command and use result from <code>public/</code> on your own.</p>
-<pre tabindex="0"><code>$ git clone https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock
-</code></pre><h3 id="3-install-docdock-from-zip">3. Install DocDock from ZIP</h3>
-<p>All files from theme will be tracked inside parent repo, to update it, have to override files in theme. <a href="https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip"><span class="glyphicon glyphicon-download" aria-hidden="true"></span> download following zip</a> and extract inside <code>themes/</code>.</p>
-<pre tabindex="0"><code>https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip
-</code></pre><p>Name of theme in next step will be <code>hugo-theme-docdock-master</code>, can rename as you wish.</p>
-<h2 id="configuration">Configuration</h2>
+<div class="alert alert-success" role="alert">When I write my blogs, I always say there are many ways to accomplish the same task. This article is just one way that you could accomplish this task. I am showing what I felt was a good way to complete the use case but every organization/environment will be different. There is no right or wrong way to complete the tasks in this article.</div>
+
+<hr>
+
 
 
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/vcommunity/aria-automation/assembler/action-constant-and-secrets/" title="Action Constants and Secrets"> <i class="fa fa-chevron-left"></i><label>Action Constants and Secrets</label></a>
-    <a class="nav nav-next" href="/vcommunity/aria-automation/service-broker/" title="Service Broker" style="margin-right: 0px;"><label>Service Broker</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/vcommunity/aria-automation/assembler/" title="Assembler"> <i class="fa fa-chevron-left"></i><label>Assembler</label></a>
+    <a class="nav nav-next" href="/vcommunity/aria-automation/orchestrator/" title="Orchestrator" style="margin-right: 0px;"><label>Orchestrator</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -308,9 +337,29 @@ $ git submodule update
 
 <div class="footline">
     
-
+    <div class="tags"> 
+      
+        <a class="label label-default" href="https://dalehassinger.github.io/vcommunity/tags/aria-automation">Aria Automation</a>
+      
+        <a class="label label-default" href="https://dalehassinger.github.io/vcommunity/tags/action-constants">Action Constants</a>
+      
+        <a class="label label-default" href="https://dalehassinger.github.io/vcommunity/tags/secrets">Secrets</a>
+      
+        <a class="label label-default" href="https://dalehassinger.github.io/vcommunity/tags/dale-hassinger">Dale Hassinger</a>
+      
+    </div>
     
 
+    
+    <div class="author">
+        <i class='fa fa-user'></i> <a href="mailto:dale.hassinger@vcrocs.info">Dale Hassinger</a>
+    </div>
+    
+
+    
+    <div class="date">
+        <i class='fa fa-calendar'></i> Last update on 20/11/2023
+    </div>
     
 
     
