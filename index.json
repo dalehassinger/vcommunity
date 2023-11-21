@@ -21,6 +21,20 @@
 	"content": "Hugo-theme-docdock defines two types of pages. Default and Slide.\nDefault is the common page like the current one you are reading. Slide is a page that use the full screen to display its markdown content as a reveals.js presentation. HomePage is a special content that will be displayed as home page content. To tell Hugo-theme-docdock to consider a page as a slide, just add a type=\u0026quot;slide\u0026quot;in then frontmatter of your file. read more on page as slide\nHugo-theme-docdock provides archetypes to help you create this kind of pages.\nFront Matter Each Hugo page has to define a Front Matter in yaml, toml or json.\nHugo-theme-docdock uses the following parameters on top of the existing ones :\n+++ # Type of content, set \u0026quot;slide\u0026quot; to display it fullscreen with reveal.js type=\u0026quot;page\u0026quot; # Creator's Display name creatordisplayname = \u0026quot;Valere JEANTET\u0026quot; # Creator's Email creatoremail = \u0026quot;valere.jeantet@gmail.com\u0026quot; # LastModifier's Display name lastmodifierdisplayname = \u0026quot;Valere JEANTET\u0026quot; # LastModifier's Email lastmodifieremail = \u0026quot;valere.jeantet@gmail.com\u0026quot; +++ Ordering Hugo provides a flexible way to handle order for your pages.\nThe simplest way is to use weight parameter in the front matter of your page.\nRead more on content organization\n"
 },
 {
+	"uri": "https://dalehassinger.github.io/vcommunity/powercli/",
+	"title": "PowerCLI",
+	"tags": ["Aria Operations", "Aria Operations for Logs", "Aria Automation", "Aria Automation Config", "Dale Hassinger"],
+	"description": "",
+	"content": "PowerCLI Scripts:\n"
+},
+{
+	"uri": "https://dalehassinger.github.io/vcommunity/resource-links/",
+	"title": "Resource Links",
+	"tags": ["Aria Operations", "Aria Operations for Logs", "Aria Automation", "Aria Automation Config", "Dale Hassinger"],
+	"description": "",
+	"content": "Resource Links:\n"
+},
+{
 	"uri": "https://dalehassinger.github.io/vcommunity/vcommunity/",
 	"title": "vCommunity",
 	"tags": ["Aria Operations", "Aria Operations for Logs", "Aria Automation", "Aria Automation Config", "Dale Hassinger"],
@@ -35,32 +49,11 @@
 	"content": "Podcasts:\n"
 },
 {
-	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation-config/",
-	"title": "Aria Automation Config",
-	"tags": [],
-	"description": "",
-	"content": "# ----- [ Check DataStores ] ----- # --- [ Connect vCenter ] --- Write-Output \u0026#34;Connecting to vCenter...\u0026#34; Connect-VIServer -Server \u0026#39;192.168.0.100\u0026#39; -User \u0026#39;administrator@corp.local\u0026#39; -Password \u0026#39;VMware1!\u0026#39; -Protocol https -Force clear Get-Datastore | Select-Object @{n=\u0026#34;Datastore | Name\u0026#34;;e={($_.Name)}},@{n=\u0026#34;Capacity | GB\u0026#34;;e={[system.math]::Round($_.CapacityGB,0)}},@{n=\u0026#34;FreeSpace | GB\u0026#34;;e={[system.math]::Round($_.FreeSpaceGB,0)}} | Sort-Object \u0026#39;Datastore | Name\u0026#39; | Format-Table -AutoSize # --- [ Disconnect from all vCenters ] --- #Write-Output \u0026#34;Disconnecting from vCenter...\u0026#34; Disconnect-VIServer * -Force -Confirm:$false With Hugo, pages are the core of your site. Organize your site like any other Hugo project. Magic occurs with the nested sections implemention done in v0.22 of hugo (congrats @bep).\nWith docdock, Each content page composes the menu, they shape the structure of your website.\nTo link pages to each other, place them in a folders hierarchy\n_index.md is required in each folder, it\u0026rsquo;s your \u0026ldquo;folder home page\u0026rdquo; Add header to a menu entry in the page frontmatter, add a head param to insert any HTML code before the menu entry:\nexample to display a \u0026ldquo;Hello\u0026rdquo;\n+++ title = \u0026quot;Github repo\u0026quot; head =\u0026quot;\u0026lt;label\u0026gt;Hello\u0026lt;/label\u0026gt; \u0026quot; +++ Add icon to a menu entry in the page frontmatter, add a pre param to insert any HTML code before the menu label:\nexample to display a github icon\n+++ title = \u0026quot;Github repo\u0026quot; pre =\u0026quot;\u0026lt;i class='fa fa-github'\u0026gt;\u0026lt;/i\u0026gt; \u0026quot; +++ Order sibling menu/page entries in your frontmatter add weight param with a number to order.\n+++ title=\u0026quot;My page\u0026quot; weight = 4 +++ add `ordersectionsby = \"title\"` in your config.toml to order menu entries by title Hide a menu entry in your frontmatter add hidden=true param.\n+++ title=\u0026quot;My page\u0026quot; hidden = true +++ Unfolded menu entry by default One or more menuentries can be displayed unfolded by default. (like the \u0026ldquo;Getting start\u0026rdquo; menu entry in this website)\nin your frontmatter add alwaysopen=true param. example :\ntitle = \u0026#34;Getting start\u0026#34; description = \u0026#34;\u0026#34; weight = 1 alwaysopen = true Folder structure and file name Content organization is your content folder structure.\nHomepage Find out how to customize homepage\n"
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation-config/extramenu/",
-	"title": "Extra menu entries",
-	"tags": [],
-	"description": "",
-	"content": "You can define additional menu entries in the navigation menu without any link to content.\nEdit the website configuration config.toml and add a [[menu.shortcuts]] entry for each link your want to add.\nExample from the current website, note the pre param which allows you to insert HTML code and used here to separate content\u0026rsquo;s menu from this \u0026ldquo;static\u0026rdquo; menu\n[[menu.shortcuts]] pre = \u0026quot;\u0026lt;h3\u0026gt;More\u0026lt;/h3\u0026gt;\u0026quot; name = \u0026quot;\u0026lt;i class='fa fa-github'\u0026gt;\u0026lt;/i\u0026gt; Github repo\u0026quot; identifier = \u0026quot;ds\u0026quot; url = \u0026quot;https://github.com/vjeantet/hugo-theme-docdock\u0026quot; weight = 1 [[menu.shortcuts]] name = \u0026quot;\u0026lt;i class='fa fa-bookmark'\u0026gt;\u0026lt;/i\u0026gt; Hugo Documentation\u0026quot; identifier = \u0026quot;hugodoc\u0026quot; url = \u0026quot;https://gohugo.io/\u0026quot; weight = 2 Read more about hugo and menu here\n"
-},
-{
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-operations-for-logs/alerts/",
 	"title": "Alerts",
 	"tags": [],
 	"description": "",
 	"content": "VMware Aria Operations for Logs | Alerts:\n"
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation-config/logo/",
-	"title": "Logo placeholder",
-	"tags": [],
-	"description": "",
-	"content": "Create a _header.md page in content folder. Its content is what you get in the logo placeholder (top left of the screen).\nTip : you can add a image, a combobox with links to other documentation\u0026hellip;. Tip 2 : look at extra static menu if you want to add links to other website in this sidebar "
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/",
@@ -70,25 +63,46 @@
 	"content": "Testing pics and YouTube Links.\n"
 },
 {
-	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/configuration/",
-	"title": "Configuration",
+	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation-config/",
+	"title": "Aria Automation Config",
+	"tags": [],
+	"description": "",
+	"content": "Aria Automation Config:\n"
+},
+{
+	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/assembler/",
+	"title": "Assembler",
 	"tags": [],
 	"description": "",
 	"content": "When building the website, you can set a theme by using --theme option. We suggest you to edit your configuration file and set the theme by default. Example with config.toml format.\nImport sample config from sample site to Hugo root:\n$ cp themes/docdock/exampleSite/config.toml . Change following config.toml line as needed, depending on method above:\ntheme = \u0026#34;\u0026lt;hugo-theme-docdock-dir-name\u0026gt;\u0026#34; Comment out following line, so default themes/ will be used:\n# themesdir = \u0026#34;../..\u0026#34; Activate search If not already present, add the follow lines to the config.toml file.\n[outputs] home = [ \u0026#34;HTML\u0026#34;, \u0026#34;RSS\u0026#34;, \u0026#34;JSON\u0026#34;] LUNRJS search index file will be generated on content changes.\n(Bonus) Create empty file .gitkeep inside public/ and add following to .gitignore. This way it will keep repo smaller and won\u0026rsquo;t bring build result files and errors to remote checkout places:\n/public/* !/public/.gitkeep Preview site $ hugo server to browse site on http://localhost:1313\nYour website\u0026rsquo;s content"
 },
 {
-	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation-config/customize-style/",
-	"title": "Customize website look and feel",
-	"tags": [],
-	"description": "",
-	"content": "You can change the style and behavior of the theme without touching it.\ninject your own html, css or js into the page overide existing css or js with your own files No needs to copy the entire theme to customize some parts Bellow are solutions to avoid copying the entire theme into your own codebase.\nAdd custom CSS and JS or HTML into the \u0026lt;head\u0026gt; part of each page : Create a custom header partial layouts/partials/custom-head.html\ncontent/ layouts/ partials/ custom-head.html write your own content like (an example from @nzbart):\n\u0026lt;link rel=\u0026#34;stylesheet\u0026#34; href=\u0026#34;/css/custom.css\u0026#34;\u0026gt; \u0026lt;script src=\u0026#34;/js/custom.js\u0026#34;\u0026gt;\u0026lt;/script\u0026gt; Then overrode the style your want to change in static/css/custom.css (in this case, to avoid altering the casing of titles):\nh2 { text-transform: none; } And executed some additional JavaScript from static/js/custom.js (note that jQuery is already loaded by the theme):\nfunction tweakPage() { // make some changes here } $(tweakPage) now feel free to add the JS, CSS, HTML code you want :)\nAdd custom HTML at the end of the body part of each page : Create a custom-footer.html into a layouts/partials folder next to the content folder\ncontent/ layouts/ partials/ custom-footer.html now feel free to add the JS, CSS, HTML code you want :)\nOveride existing CSS or JS Create the matching file in your static folder, hugo will use yours instead of the theme\u0026rsquo;s one. Example :\ncreate a theme.css and place it into static/css/ to fully overide docdock\u0026rsquo;s theme.css\n"
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/installation/",
-	"title": "Installation",
+	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/orchestrator/",
+	"title": "Orchestrator",
 	"tags": [],
 	"description": "",
 	"content": "HUGO v0.32 minimum required to use this theme The following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you to train by following this great documentation for beginners.\nInstallation We assume that all changes to Hugo content and customizations are going to be tracked by git (GitHub, Bitbucket etc.). Develop locally, build on remote system.\nBefore start real work:\nInitialize Hugo Install DocDock theme Configure DocDock and Hugo Prepare empty Hugo site Create empty directory, which will be root of your Hugo project. Navigate there and let Hugo to create minimal required directory structure:\n$ hugo new site . AFTER that, initialize this as git directory where to track further changes\n$ git init Next, there are at least three ways to install DocDock (first recommended):\nAs git submodule As git clone As direct copy (from ZIP) Navigate to your themes folder in your Hugo site and use perform one of following scenarios.\n1. Install DocDock as git submodule DocDock will be added like a dependency repo to original project. When using CI tools like Netlify, Jenkins etc., submodule method is required, or you will get theme not found issues. Same applies when building site on remote server trough SSH.\nIf submodule is no-go, use 3rd option.\nOn your root of Hugo execute:\n$ git submodule add https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock Next initialize submodule for parent git repo:\n$ git submodule init $ git submodule update Now you are ready to add content and customize looks. Do not change any file inside theme directory.\nIf you want to freeze changes to DocDock theme itself and use still submodules, fork private copy of DocDock and use that as submodule. When you are ready to update theme, just pull changes from origin to your private fork.\n2. Install DocDock simply as git clone This method results that files are checked out locally, but won\u0026rsquo;t be visible from parent git repo. Probably you will build site locally with hugo command and use result from public/ on your own.\n$ git clone https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock 3. Install DocDock from ZIP All files from theme will be tracked inside parent repo, to update it, have to override files in theme. download following zip and extract inside themes/.\nhttps://github.com/vjeantet/hugo-theme-docdock/archive/master.zip Name of theme in next step will be hugo-theme-docdock-master, can rename as you wish.\nConfiguration"
+},
+{
+	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/service-broker/",
+	"title": "Service Broker",
+	"tags": [],
+	"description": "",
+	"content": "When building the website, you can set a theme by using --theme option. We suggest you to edit your configuration file and set the theme by default. Example with config.toml format.\nImport sample config from sample site to Hugo root:\n$ cp themes/docdock/exampleSite/config.toml . Change following config.toml line as needed, depending on method above:\ntheme = \u0026#34;\u0026lt;hugo-theme-docdock-dir-name\u0026gt;\u0026#34; Comment out following line, so default themes/ will be used:\n# themesdir = \u0026#34;../..\u0026#34; Activate search If not already present, add the follow lines to the config.toml file.\n[outputs] home = [ \u0026#34;HTML\u0026#34;, \u0026#34;RSS\u0026#34;, \u0026#34;JSON\u0026#34;] LUNRJS search index file will be generated on content changes.\n(Bonus) Create empty file .gitkeep inside public/ and add following to .gitignore. This way it will keep repo smaller and won\u0026rsquo;t bring build result files and errors to remote checkout places:\n/public/* !/public/.gitkeep Preview site $ hugo server to browse site on http://localhost:1313\nYour website\u0026rsquo;s content"
+},
+{
+	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation-config/states/",
+	"title": "States",
+	"tags": [],
+	"description": "",
+	"content": "States:\n"
+},
+{
+	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation-config/targets/",
+	"title": "Targets",
+	"tags": [],
+	"description": "",
+	"content": "Targets:\n"
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-operations-for-logs/",
@@ -203,13 +217,6 @@
 	"content": "github contributors @vjeantet 247 commits @matcornic 45 commits @W-Floyd 24 commits @Pilskalns 24 commits @lierdakil 16 commits @Marthym 13 commits @gwleclerc 9 commits @jose-oc 8 commits @siamkreative 6 commits @Xipas 5 commits @FMuro 2 commits @joepvd 2 commits @EnigmaCurry 2 commits @Yoann-M 2 commits @aral 2 commits @adamlamar 1 commits @byzheng 1 commits @zivbk1 1 commits @danielfbm 1 commits @damoon 1 commits @vielmetti 1 commits @erikjasiak 1 commits @giuliov 1 commits @farmergreg 1 commits @JOduMonT 1 commits @tarpdalton 1 commits @jamestharpe 1 commits @JohnBlood 1 commits @kamilchm 1 commits @lgfischer 1 commits @ripienaar 1 commits @rsanderscybraics 1 commits @shazic 1 commits @viertaxa 1 commits @uweschaefer 1 commits @rabadiw 1 commits @wshayes 1 commits @eyoder 1 commits @ivan-danilov 1 commits @karlmacklin 1 commits @petzi53 1 commits @remi31000 1 commits @tonivj5 1 commits Other contribution @bep supports and advices @facette.io Flex style based on facette documentation theme, Thanks to @vbatoufflet Packages and libraries Bootstrap - front-end framework mermaid - generation of diagram and flowchart from text in a similar manner as markdown font awesome - the iconic font and CSS framework jQuery - The Write Less, Do More, JavaScript Library lunr - Lunr enables you to provide a great search experience without the need for external, server-side, search services\u0026hellip; JavaScript-autoComplete - An extremely lightweight and powerful vanilla JavaScript completion suggester. clipboard.js - copy text to clipboard highlight.js - Javascript syntax highlighter modernizr - A JavaScript toolkit that allows web developers to use new CSS3 and HTML5 features while maintaining a fine level of control over browsers that don\u0026rsquo;t support reveal-js - The HTML Presentation Framework Tooling Netlify - Continuous deployement and hosting of this documentation Hugo "
 },
 {
-	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation-config/customize-style/disable/",
-	"title": "Disable features",
-	"tags": [],
-	"description": "",
-	"content": "You can disable feature in docdock by changing some params in config.toml\nhide Next / Prev Chevrons [params] disableNavChevron = true hide Search box in side menu [params] disableSearch = true hide the icon in side bar [params] disableHomeIcon = true "
-},
-{
 	"uri": "https://dalehassinger.github.io/vcommunity/showcase/",
 	"title": "Docdock-built Sites",
 	"tags": [],
@@ -229,18 +236,4 @@
 	"tags": [],
 	"description": "",
 	"content": " Automation | Monitoring | Logging\n"
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation-config/customize-style/themestyle/",
-	"title": "Theme styles",
-	"tags": [],
-	"description": "change theme style",
-	"content": "In site configuration file, you can set a subtheme name of this theme to load a specific css.\nadd a param themeStyle = \u0026quot;STYLE_NAME\u0026quot; in the [params] part of config.toml file.\nStyle \u0026ldquo;original\u0026rdquo; [params] themeStyle = \u0026#34;original\u0026#34; Style \u0026ldquo;flex\u0026rdquo; (work in progress) [params] themeStyle = \u0026#34;flex\u0026#34; "
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation-config/customize-style/theme-variants/",
-	"title": "Theme variants",
-	"tags": [],
-	"description": "change theme style/colors",
-	"content": "In site configuration file, you can set a variant name of this theme to load a specific css, with different color specifications.\nadd a param themeVariant = \u0026quot;VARIANT_NAME\u0026quot; in the [params] part of config.toml file.\nAvailable variants change only colors at this moment Variant \u0026ldquo;gray\u0026rdquo; [params] themeVariant = \u0026#34;gray\u0026#34; Variant \u0026ldquo;gold\u0026rdquo; [params] themeVariant = \u0026#34;gold\u0026#34; Variant \u0026ldquo;green\u0026rdquo; [params] themeVariant = \u0026#34;green\u0026#34;` "
 }]

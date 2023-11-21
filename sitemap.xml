@@ -11,31 +11,34 @@
     <loc>https://dalehassinger.github.io/vcommunity/aria-operations/</loc>
     <lastmod>2023-11-20T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://dalehassinger.github.io/vcommunity/powercli/</loc>
+    <lastmod>2023-11-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dalehassinger.github.io/vcommunity/resource-links/</loc>
+    <lastmod>2023-11-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/vcommunity/</loc>
     <lastmod>2023-11-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/vcommunity/vmware-community-podcast/</loc>
     <lastmod>2023-11-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/aria-automation-config/</loc>
-    <lastmod>2017-04-29T18:36:24+02:00</lastmod>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/aria-automation-config/extramenu/</loc>
-    <lastmod>2017-04-29T18:36:24+02:00</lastmod>
-  </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/aria-operations-for-logs/alerts/</loc>
-    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/aria-automation-config/logo/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/aria-automation/</loc>
   </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/aria-automation/configuration/</loc>
+    <loc>https://dalehassinger.github.io/vcommunity/aria-automation-config/</loc>
   </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/aria-automation-config/customize-style/</loc>
+    <loc>https://dalehassinger.github.io/vcommunity/aria-automation/assembler/</loc>
   </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/aria-automation/installation/</loc>
+    <loc>https://dalehassinger.github.io/vcommunity/aria-automation/orchestrator/</loc>
+  </url><url>
+    <loc>https://dalehassinger.github.io/vcommunity/aria-automation/service-broker/</loc>
+  </url><url>
+    <loc>https://dalehassinger.github.io/vcommunity/aria-automation-config/states/</loc>
+  </url><url>
+    <loc>https://dalehassinger.github.io/vcommunity/aria-automation-config/targets/</loc>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/aria-operations-for-logs/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
@@ -83,16 +86,10 @@
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/credits/</loc>
   </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/aria-automation-config/customize-style/disable/</loc>
-  </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/showcase/</loc>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/_footer/</loc>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/_header/</loc>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/aria-automation-config/customize-style/themestyle/</loc>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/aria-automation-config/customize-style/theme-variants/</loc>
   </url>
 </urlset>

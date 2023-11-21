@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="revised" content="2023-11-21T07:56:42 EST">
-<title>Aria Automation :: </title>
+<title>Assembler :: </title>
 <link rel="shortcut icon" href="/vcommunity/images/favicon.png" type="image/x-icon" />
 <link href="/vcommunity/css/nucleus.css" rel="stylesheet">
 <link href="/vcommunity/css/font-awesome.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
 
     
   </head>
-  <body data-url="/vcommunity/aria-automation/">
+  <body data-url="/vcommunity/aria-automation/assembler/">
     
       <header>
   <div class="logo">
@@ -203,8 +203,15 @@
           
     <option value="/vcommunity/about/" >
    About this site</option>
-    <option value="/vcommunity/aria-automation/"  selected>
-   Aria Automation</option>
+    <option value="/vcommunity/aria-automation/" >
+   Aria Automation</option> 
+    <option value="/vcommunity/aria-automation/assembler/"  selected>
+   Assembler</option>
+    <option value="/vcommunity/aria-automation/orchestrator/" >
+   Orchestrator</option>
+    <option value="/vcommunity/aria-automation/service-broker/" >
+   Service Broker</option>
+  
     <option value="/vcommunity/aria-automation-config/" >
    Aria Automation Config</option>
     <option value="/vcommunity/aria-operations/" >
@@ -230,26 +237,39 @@
       </div>
     
 
-    <h1>Aria Automation</h1>
+    <h1>Assembler</h1>
     
     
     
 
-<p>Testing pics and YouTube Links.</p>
-<p><img src="./ActionConstants-01.png?classes=border,shadow" alt="Click to see Larger Image">
-<img src="./ActionConstants-02.png?classes=border,shadow" alt="Click to see Larger Image">
-<img src="./ActionConstants-03.png?classes=border,shadow" alt="Click to see Larger Image">
-<img src="./ActionConstants-04.png?classes=border,shadow" alt="Click to see Larger Image"></p>
-<center><iframe width="90%" height="550" src="https://www.youtube.com/embed/k3mqw3kRsuE?si=DGkDykFTc1e00PQR" title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
-
+<p>When building the website, you can set a theme by using <code>--theme</code> option. We suggest you to edit your configuration file and set the theme by default. Example with <code>config.toml</code> format.</p>
+<p>Import sample config from sample site to Hugo root:</p>
+<pre tabindex="0"><code>$ cp themes/docdock/exampleSite/config.toml .
+</code></pre><p>Change following <code>config.toml</code> line as needed, depending on method above:</p>
+<pre tabindex="0"><code>theme = &#34;&lt;hugo-theme-docdock-dir-name&gt;&#34;
+</code></pre><p>Comment out following line, so default <code>themes/</code> will be used:</p>
+<pre tabindex="0"><code># themesdir = &#34;../..&#34;
+</code></pre><h2 id="activate-search">Activate search</h2>
+<p>If not already present, add the follow lines to the <code>config.toml</code> file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#111">[</span><span style="color:#75af00">outputs</span><span style="color:#111">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#75af00">home</span> <span style="color:#111">=</span> <span style="color:#111">[</span> <span style="color:#d88200">&#34;HTML&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;RSS&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;JSON&#34;</span><span style="color:#111">]</span>
+</span></span></code></pre></div><p>LUNRJS search index file will be generated on content changes.</p>
+<h4 id="bonus">(Bonus)</h4>
+<p>Create empty file <code>.gitkeep</code> inside <code>public/</code> and add following to <code>.gitignore</code>.  This way it will keep repo smaller and won&rsquo;t bring build result files and errors to remote checkout places:</p>
+<pre tabindex="0"><code>/public/*
+!/public/.gitkeep
+</code></pre><h3 id="preview-site">Preview site</h3>
+<pre tabindex="0"><code>$ hugo server
+</code></pre><p>to browse site on http://localhost:1313</p>
+<h2 id="your-websites-content">Your website&rsquo;s content</h2>
 
 
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/vcommunity/vcommunity/vmware-community-podcast/" title="VMware CMTY Podcast"> <i class="fa fa-chevron-left"></i><label>VMware CMTY Podcast</label></a>
-    <a class="nav nav-next" href="/vcommunity/aria-automation/assembler/" title="Assembler" style="margin-right: 0px;"><label>Assembler</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/vcommunity/aria-automation/" title="Aria Automation"> <i class="fa fa-chevron-left"></i><label>Aria Automation</label></a>
+    <a class="nav nav-next" href="/vcommunity/aria-automation/orchestrator/" title="Orchestrator" style="margin-right: 0px;"><label>Orchestrator</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>

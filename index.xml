@@ -9,24 +9,6 @@
     <lastBuildDate>Mon, 20 Nov 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://dalehassinger.github.io/vcommunity/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Extra menu entries</title>
-      <link>https://dalehassinger.github.io/vcommunity/aria-automation-config/extramenu/</link>
-      <pubDate>Sat, 29 Apr 2017 18:36:24 +0200</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/aria-automation-config/extramenu/</guid>
-      <description>You can define additional menu entries in the navigation menu without any link to content.
-Edit the website configuration config.toml and add a [[menu.shortcuts]] entry for each link your want to add.
-Example from the current website, note the pre param which allows you to insert HTML code and used here to separate content&amp;rsquo;s menu from this &amp;ldquo;static&amp;rdquo; menu
-[[menu.shortcuts]] pre = &amp;quot;&amp;lt;h3&amp;gt;More&amp;lt;/h3&amp;gt;&amp;quot; name = &amp;quot;&amp;lt;i class=&#39;fa fa-github&#39;&amp;gt;&amp;lt;/i&amp;gt; Github repo&amp;quot; identifier = &amp;quot;ds&amp;quot; url = &amp;quot;https://github.</description>
-    </item>
-    <item>
-      <title>Logo placeholder</title>
-      <link>https://dalehassinger.github.io/vcommunity/aria-automation-config/logo/</link>
-      <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/aria-automation-config/logo/</guid>
-      <description>Create a _header.md page in content folder. Its content is what you get in the logo placeholder (top left of the screen).
-Tip : you can add a image, a combobox with links to other documentation&amp;hellip;. Tip 2 : look at extra static menu if you want to add links to other website in this sidebar </description>
-    </item>
-    <item>
       <title>My Slide ! fullscreen</title>
       <link>https://dalehassinger.github.io/vcommunity/aria-operations/myslide/</link>
       <pubDate>Mon, 24 Apr 2017 18:36:24 +0200</pubDate>
@@ -39,14 +21,6 @@ Tip : you can add a image, a combobox with links to other documentation&amp;hell
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://dalehassinger.github.io/vcommunity/credits/</guid>
       <description>github contributors @vjeantet 247 commits @matcornic 45 commits @W-Floyd 24 commits @Pilskalns 24 commits @lierdakil 16 commits @Marthym 13 commits @gwleclerc 9 commits @jose-oc 8 commits @siamkreative 6 commits @Xipas 5 commits @FMuro 2 commits @joepvd 2 commits @EnigmaCurry 2 commits @Yoann-M 2 commits @aral 2 commits @adamlamar 1 commits @byzheng 1 commits @zivbk1 1 commits @danielfbm 1 commits @damoon 1 commits @vielmetti 1 commits @erikjasiak 1 commits @giuliov 1 commits @farmergreg 1 commits @JOduMonT 1 commits @tarpdalton 1 commits @jamestharpe 1 commits @JohnBlood 1 commits @kamilchm 1 commits @lgfischer 1 commits @ripienaar 1 commits @rsanderscybraics 1 commits @shazic 1 commits @viertaxa 1 commits @uweschaefer 1 commits @rabadiw 1 commits @wshayes 1 commits @eyoder 1 commits @ivan-danilov 1 commits @karlmacklin 1 commits @petzi53 1 commits @remi31000 1 commits @tonivj5 1 commits Other contribution @bep supports and advices @facette.</description>
-    </item>
-    <item>
-      <title>Disable features</title>
-      <link>https://dalehassinger.github.io/vcommunity/aria-automation-config/customize-style/disable/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/aria-automation-config/customize-style/disable/</guid>
-      <description>You can disable feature in docdock by changing some params in config.toml
-hide Next / Prev Chevrons [params] disableNavChevron = true hide Search box in side menu [params] disableSearch = true hide the icon in side bar [params] disableHomeIcon = true </description>
     </item>
     <item>
       <title>Docdock-built Sites</title>
@@ -68,24 +42,6 @@ hide Next / Prev Chevrons [params] disableNavChevron = true hide Search box in s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://dalehassinger.github.io/vcommunity/_header/</guid>
       <description>Automation | Monitoring | Logging</description>
-    </item>
-    <item>
-      <title>Theme styles</title>
-      <link>https://dalehassinger.github.io/vcommunity/aria-automation-config/customize-style/themestyle/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/aria-automation-config/customize-style/themestyle/</guid>
-      <description>In site configuration file, you can set a subtheme name of this theme to load a specific css.
-add a param themeStyle = &amp;quot;STYLE_NAME&amp;quot; in the [params] part of config.toml file.
-Style &amp;ldquo;original&amp;rdquo; [params] themeStyle = &amp;#34;original&amp;#34; Style &amp;ldquo;flex&amp;rdquo; (work in progress) [params] themeStyle = &amp;#34;flex&amp;#34; </description>
-    </item>
-    <item>
-      <title>Theme variants</title>
-      <link>https://dalehassinger.github.io/vcommunity/aria-automation-config/customize-style/theme-variants/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/aria-automation-config/customize-style/theme-variants/</guid>
-      <description>In site configuration file, you can set a variant name of this theme to load a specific css, with different color specifications.
-add a param themeVariant = &amp;quot;VARIANT_NAME&amp;quot; in the [params] part of config.toml file.
-Available variants change only colors at this moment Variant &amp;ldquo;gray&amp;rdquo; [params] themeVariant = &amp;#34;gray&amp;#34; Variant &amp;ldquo;gold&amp;rdquo; [params] themeVariant = &amp;#34;gold&amp;#34; Variant &amp;ldquo;green&amp;rdquo; [params] themeVariant = &amp;#34;green&amp;#34;` </description>
     </item>
   </channel>
 </rss>
