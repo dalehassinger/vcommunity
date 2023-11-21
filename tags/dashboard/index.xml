@@ -13,8 +13,7 @@
       <link>https://dalehassinger.github.io/vcommunity/aria-operations/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://dalehassinger.github.io/vcommunity/aria-operations/</guid>
-      <description>Hugo-theme-docdock defines two types of pages. Default and Slide.
-Default is the common page like the current one you are reading. Slide is a page that use the full screen to display its markdown content as a reveals.js presentation. HomePage is a special content that will be displayed as home page content. To tell Hugo-theme-docdock to consider a page as a slide, just add a type=&amp;quot;slide&amp;quot;in then frontmatter of your file.</description>
+      <description>Aria Operations: </description>
     </item>
   </channel>
 </rss>

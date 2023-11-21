@@ -44,6 +44,13 @@
       <description></description>
     </item>
     <item>
+      <title>Assembler</title>
+      <link>https://dalehassinger.github.io/vcommunity/tags/assembler/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://dalehassinger.github.io/vcommunity/tags/assembler/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Dale Hassinger</title>
       <link>https://dalehassinger.github.io/vcommunity/tags/dale-hassinger/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
@@ -62,20 +69,6 @@
       <link>https://dalehassinger.github.io/vcommunity/tags/secrets/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://dalehassinger.github.io/vcommunity/tags/secrets/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>tag1</title>
-      <link>https://dalehassinger.github.io/vcommunity/tags/tag1/</link>
-      <pubDate>Fri, 28 Apr 2017 18:36:24 +0200</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/tags/tag1/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>tag2</title>
-      <link>https://dalehassinger.github.io/vcommunity/tags/tag2/</link>
-      <pubDate>Fri, 28 Apr 2017 18:36:24 +0200</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/tags/tag2/</guid>
       <description></description>
     </item>
   </channel>

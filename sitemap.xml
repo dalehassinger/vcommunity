@@ -35,6 +35,9 @@
     <loc>https://dalehassinger.github.io/vcommunity/aria-operations-for-logs/alerts/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url><url>
+    <loc>https://dalehassinger.github.io/vcommunity/aria-operations-for-logs/</loc>
+    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
+  </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/aria-automation-config/</loc>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/aria-automation/orchestrator/</loc>
@@ -44,9 +47,6 @@
     <loc>https://dalehassinger.github.io/vcommunity/aria-automation-config/states/</loc>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/aria-automation-config/targets/</loc>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/aria-operations-for-logs/</loc>
-    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/tags/action-constants/</loc>
     <lastmod>2023-11-20T00:00:00+00:00</lastmod>
@@ -63,6 +63,9 @@
     <loc>https://dalehassinger.github.io/vcommunity/tags/aria-operations-for-logs/</loc>
     <lastmod>2023-11-20T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://dalehassinger.github.io/vcommunity/tags/assembler/</loc>
+    <lastmod>2023-11-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/tags/dale-hassinger/</loc>
     <lastmod>2023-11-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -77,15 +80,6 @@
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/aria-operations/dashboards/</loc>
     <lastmod>2017-04-28T18:36:24+02:00</lastmod>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/tags/tag1/</loc>
-    <lastmod>2017-04-28T18:36:24+02:00</lastmod>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/tags/tag2/</loc>
-    <lastmod>2017-04-28T18:36:24+02:00</lastmod>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/aria-operations/myslide/</loc>
-    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/aria-operations/reports/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>

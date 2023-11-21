@@ -4,7 +4,7 @@
 	"title": "About this site",
 	"tags": ["Aria Operations", "Aria Operations for Logs", "Aria Automation", "Aria Automation Config", "Dale Hassinger"],
 	"description": "",
-	"content": "Your Resource to learn about Automation, Monitoring, Logging, more\u0026hellip; "
+	"content": "Your Resource to learn about Automation, Monitoring, Logging, more\u0026hellip; Monitoring: Automation: "
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/about/",
@@ -16,7 +16,7 @@
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/assembler/action-constant-and-secrets/",
 	"title": "Action Constants and Secrets",
-	"tags": ["Aria Automation", "Action Constants", "Secrets", "Dale Hassinger"],
+	"tags": ["Aria Automation", "Action Constants", "Secrets", "Assembler", "Dale Hassinger"],
 	"description": "",
 	"content": "VMware Aria Automation | Action Constants and Secrets: VMware Aria Automation 8.14 was used for this Blog Post. When new versions of VMware Aria Automation are released, the code may need to be changed.\nAll the source code for this Blog is saved in my GitHub Repository. Click on the links within the blog to access the code.\nI wanted to share how I use Action Constants and Secrets within VMware Aria Automation. Action Constants are a great to have a variable that can be used with many Actions where the value may change. Instead of having to edit 10s or 100s of Actions, you change One Action Constant and all the Actions are updated instantly. Main reason to use Secrets is to keep the values of Passwords out of the code! Plus, like Action Constants, if a Password would change, all you need to do is change one Secret and all your Actions and Templates are automatically Updated. Secrets can also be used in the yaml code of Templates.\nAction Constants Action Constants Use Cases:\nvCenter Username vCenter FQDN VMware Aria Automation Config Username VMware Aria Automation Config FQDN salt master FQDN Any value used in Actions that may change from time to time To access Action Constants: Assembler/Extensibility/Actions/Actions Constants\nYou will see the Action Constants Names and Values. How to use Action Constants and Secrets with an Action:\nAdd the Action Constants and Secrets used within the Action in the Default inputs section. To use a Action Constant value within the Action PowerShell code use $inputs.\u0026ldquo;Action Constant\u0026rdquo; To use a Secret value within the Action PowerShell code use $context.getSecret($inputs.\u0026ldquo;Secret Name\u0026rdquo;) In the example code, review how I am connecting to the vCenter. No hard coded Username, Password or vCenter FQDN. If any of these values would change, I would never need to edit the Action, only the Action Constants and Secret. Link to code | GitHub Repository Secrets Secrets Use Cases:\nPasswords Any value you don\u0026rsquo;t want displayed in plain text within your code To access Secrets: Assembler/Infrastructure/Secrets/Secrets\nYou will see the Secret Names and Description only. You can never see the Secret value after you create it. If you think the value is not correct you need to re-enter the value. How to use Secrets with an Template:\nAdd code to the template yaml that is like this: password: \u0026lsquo;${secret.UbuntuPassword}\u0026rsquo; See Screen Shot Links to resources about Actions Constants and Secrets: Secret Automation Assembler properties How can I create extensibility action constants When I write my blogs, I always say there are many ways to accomplish the same task. This article is just one way that you could accomplish this task. I am showing what I felt was a good way to complete the use case but every organization/environment will be different. There is no right or wrong way to complete the tasks in this article. "
 },
@@ -25,21 +25,21 @@
 	"title": "Aria Automation",
 	"tags": [],
 	"description": "",
-	"content": "Testing pics and YouTube Links.\n"
+	"content": "Aria Automation: "
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-operations/",
 	"title": "Aria Operations",
 	"tags": ["Aria Operations", "Dashboard"],
 	"description": "",
-	"content": "Hugo-theme-docdock defines two types of pages. Default and Slide.\nDefault is the common page like the current one you are reading. Slide is a page that use the full screen to display its markdown content as a reveals.js presentation. HomePage is a special content that will be displayed as home page content. To tell Hugo-theme-docdock to consider a page as a slide, just add a type=\u0026quot;slide\u0026quot;in then frontmatter of your file. read more on page as slide\nHugo-theme-docdock provides archetypes to help you create this kind of pages.\nFront Matter Each Hugo page has to define a Front Matter in yaml, toml or json.\nHugo-theme-docdock uses the following parameters on top of the existing ones :\n+++ # Type of content, set \u0026quot;slide\u0026quot; to display it fullscreen with reveal.js type=\u0026quot;page\u0026quot; # Creator's Display name creatordisplayname = \u0026quot;Valere JEANTET\u0026quot; # Creator's Email creatoremail = \u0026quot;valere.jeantet@gmail.com\u0026quot; # LastModifier's Display name lastmodifierdisplayname = \u0026quot;Valere JEANTET\u0026quot; # LastModifier's Email lastmodifieremail = \u0026quot;valere.jeantet@gmail.com\u0026quot; +++ Ordering Hugo provides a flexible way to handle order for your pages.\nThe simplest way is to use weight parameter in the front matter of your page.\nRead more on content organization\n"
+	"content": "Aria Operations: "
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/assembler/",
 	"title": "Assembler",
 	"tags": [],
 	"description": "",
-	"content": "When building the website, you can set a theme by using --theme option. We suggest you to edit your configuration file and set the theme by default. Example with config.toml format.\nImport sample config from sample site to Hugo root:\n$ cp themes/docdock/exampleSite/config.toml . Change following config.toml line as needed, depending on method above:\ntheme = \u0026#34;\u0026lt;hugo-theme-docdock-dir-name\u0026gt;\u0026#34; Comment out following line, so default themes/ will be used:\n# themesdir = \u0026#34;../..\u0026#34; Activate search If not already present, add the follow lines to the config.toml file.\n[outputs] home = [ \u0026#34;HTML\u0026#34;, \u0026#34;RSS\u0026#34;, \u0026#34;JSON\u0026#34;] LUNRJS search index file will be generated on content changes.\n(Bonus) Create empty file .gitkeep inside public/ and add following to .gitignore. This way it will keep repo smaller and won\u0026rsquo;t bring build result files and errors to remote checkout places:\n/public/* !/public/.gitkeep Preview site $ hugo server to browse site on http://localhost:1313\nYour website\u0026rsquo;s content"
+	"content": "Assembler: "
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/powercli/",
@@ -77,6 +77,13 @@
 	"content": "VMware Aria Operations for Logs | Alerts:\n"
 },
 {
+	"uri": "https://dalehassinger.github.io/vcommunity/aria-operations-for-logs/",
+	"title": "Aria Operations for Logs",
+	"tags": [],
+	"description": "",
+	"content": "VMware Aria Operations for Logs:\n"
+},
+{
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation-config/",
 	"title": "Aria Automation Config",
 	"tags": [],
@@ -88,14 +95,14 @@
 	"title": "Orchestrator",
 	"tags": [],
 	"description": "",
-	"content": "HUGO v0.32 minimum required to use this theme The following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you to train by following this great documentation for beginners.\nInstallation We assume that all changes to Hugo content and customizations are going to be tracked by git (GitHub, Bitbucket etc.). Develop locally, build on remote system.\nBefore start real work:\nInitialize Hugo Install DocDock theme Configure DocDock and Hugo Prepare empty Hugo site Create empty directory, which will be root of your Hugo project. Navigate there and let Hugo to create minimal required directory structure:\n$ hugo new site . AFTER that, initialize this as git directory where to track further changes\n$ git init Next, there are at least three ways to install DocDock (first recommended):\nAs git submodule As git clone As direct copy (from ZIP) Navigate to your themes folder in your Hugo site and use perform one of following scenarios.\n1. Install DocDock as git submodule DocDock will be added like a dependency repo to original project. When using CI tools like Netlify, Jenkins etc., submodule method is required, or you will get theme not found issues. Same applies when building site on remote server trough SSH.\nIf submodule is no-go, use 3rd option.\nOn your root of Hugo execute:\n$ git submodule add https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock Next initialize submodule for parent git repo:\n$ git submodule init $ git submodule update Now you are ready to add content and customize looks. Do not change any file inside theme directory.\nIf you want to freeze changes to DocDock theme itself and use still submodules, fork private copy of DocDock and use that as submodule. When you are ready to update theme, just pull changes from origin to your private fork.\n2. Install DocDock simply as git clone This method results that files are checked out locally, but won\u0026rsquo;t be visible from parent git repo. Probably you will build site locally with hugo command and use result from public/ on your own.\n$ git clone https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock 3. Install DocDock from ZIP All files from theme will be tracked inside parent repo, to update it, have to override files in theme. download following zip and extract inside themes/.\nhttps://github.com/vjeantet/hugo-theme-docdock/archive/master.zip Name of theme in next step will be hugo-theme-docdock-master, can rename as you wish.\nConfiguration"
+	"content": "Orchestrator: "
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/service-broker/",
 	"title": "Service Broker",
 	"tags": [],
 	"description": "",
-	"content": "When building the website, you can set a theme by using --theme option. We suggest you to edit your configuration file and set the theme by default. Example with config.toml format.\nImport sample config from sample site to Hugo root:\n$ cp themes/docdock/exampleSite/config.toml . Change following config.toml line as needed, depending on method above:\ntheme = \u0026#34;\u0026lt;hugo-theme-docdock-dir-name\u0026gt;\u0026#34; Comment out following line, so default themes/ will be used:\n# themesdir = \u0026#34;../..\u0026#34; Activate search If not already present, add the follow lines to the config.toml file.\n[outputs] home = [ \u0026#34;HTML\u0026#34;, \u0026#34;RSS\u0026#34;, \u0026#34;JSON\u0026#34;] LUNRJS search index file will be generated on content changes.\n(Bonus) Create empty file .gitkeep inside public/ and add following to .gitignore. This way it will keep repo smaller and won\u0026rsquo;t bring build result files and errors to remote checkout places:\n/public/* !/public/.gitkeep Preview site $ hugo server to browse site on http://localhost:1313\nYour website\u0026rsquo;s content"
+	"content": "Service Broker: "
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation-config/states/",
@@ -110,13 +117,6 @@
 	"tags": [],
 	"description": "",
 	"content": "Targets:\n"
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/aria-operations-for-logs/",
-	"title": "Aria Operations for Logs",
-	"tags": [],
-	"description": "",
-	"content": "VMware Aria Operations for Logs:\n"
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/tags/action-constants/",
@@ -154,6 +154,13 @@
 	"content": ""
 },
 {
+	"uri": "https://dalehassinger.github.io/vcommunity/tags/assembler/",
+	"title": "Assembler",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "https://dalehassinger.github.io/vcommunity/tags/dale-hassinger/",
 	"title": "Dale Hassinger",
 	"tags": [],
@@ -184,44 +191,23 @@
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-operations/dashboards/",
 	"title": "Dashboards",
-	"tags": ["tag1", "tag2"],
-	"description": "",
-	"content": "To tell Hugo-theme-docdock to consider a page as homepage\u0026rsquo;s content, just create a content file named _index.md in content folder.\n"
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/tags/tag1/",
-	"title": "tag1",
 	"tags": [],
 	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/tags/tag2/",
-	"title": "tag2",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/aria-operations/myslide/",
-	"title": "My Slide ! fullscreen",
-	"tags": [],
-	"description": "",
-	"content": "In the morning Getting up Turn off alarm Get out of bed Breakfast Eat eggs Drink coffee In the evening Dinner Eat spaghetti Drink wine Going to sleep Get in bed Count sheep "
+	"content": "Dashboards: "
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-operations/reports/",
 	"title": "Reports",
 	"tags": [],
 	"description": "",
-	"content": "A basic md content page can be rendered as a reveal.js presentation full screen.\nYou can, also, embed presentation in a page as a small box, using the revealjs shortcode in your md file. Formating Use your common Markdown syntax you use in Hugo, don\u0026rsquo;t forget, you can put html tags too.\nSpecial syntax (in html comment) is available for adding attributes to Markdown elements. This is useful for fragments, amongst other things.\nPlease read the doc from hakimel\nOptions In the frontmatter of your page file, set type and revealOptions params\nYour content will be served as a fullscreen revealjs presentation and revealOptions will be used to ajust its behaviour.\n+++ title = \u0026quot;Test slide\u0026quot; type=\u0026quot;slide\u0026quot; theme = \u0026quot;league\u0026quot; [revealOptions] transition= 'concave' controls= true progress= true history= true center= true +++ read more about reveal options here\nSlide Delimiters When creating the content for your slideshow presentation within content markdown file you need to be able to distinguish between one slide and the next. This is achieved very simply using a convention within Markdown that indicates the start of each new slide.\nAs both horizontal and vertical slides are supported by reveal.js each has it\u0026rsquo;s own unique delimiter.\nTo denote the start of a horizontal slide simply add the following delimiter (dashes) in your Markdown:\n--- To denote the start of a vertical slide simply add the following delimiter (underscores) in your Markdown:\n___ By using a combination of horizontal and vertical slides you can customize the navigation within your slideshow presentation. Typically vertical slides are used to present information below a top-level horizontal slide.\nFor example, a very simple slideshow presentation can be created as follows\n+++ title = \u0026#34;test\u0026#34; date = \u0026#34;2017-04-24T18:36:24+02:00\u0026#34; type=\u0026#34;slide\u0026#34; theme = \u0026#34;league\u0026#34; [revealOptions] transition= \u0026#39;concave\u0026#39; controls= true progress= true history= true center= true +++ # In the morning ___ ## Getting up - Turn off alarm - Get out of bed ___ ## Breakfast - Eat eggs - Drink coffee --- # In the evening ___ ## Dinner - Eat spaghetti - Drink wine ___ ## Going to sleep - Get in bed - Count sheep click here to view this page rendered\n"
+	"content": "Reports: "
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-operations/views/",
 	"title": "Views",
 	"tags": [],
 	"description": "",
-	"content": "Images have a similar syntax to links but include a preceding exclamation point.\n![agence](https://github.com/vjeantet/vjeantet.fr/raw/master/static/images/sgthon/C.jpg) Resizing image Add HTTP parameters width and/or height to the link image to resize the image. Values are CSS values (default is auto).\n![Hackathon](https://github.com/vjeantet/vjeantet.fr/raw/master/static/images/sgthon/C.jpg?height=80px) Add CSS classes Add a HTTP classes parameter to the link image to add CSS classes. shadow and border are available but you could define other ones.\n![s](https://github.com/vjeantet/vjeantet.fr/raw/master/static/images/sgthon/C.jpg?classes=border,shadow) "
+	"content": "Views: "
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/categories/",
