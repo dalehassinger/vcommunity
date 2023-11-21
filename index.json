@@ -91,6 +91,13 @@
 	"content": "Aria Automation Config:\n"
 },
 {
+	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/service-broker/custom-form-versioning/",
+	"title": "Custom Form Versioning",
+	"tags": [],
+	"description": "",
+	"content": "Custom Form Versioning Demo: VMware Aria Automation 8.12 Released: With the release of VMware Aria Automation 8.12, Custom Form Versioning was added to the Product. I use a lot Custom Forms with the Automation that I create, so I wanted to make sure I understood how the versioning feature worked. If you never did versioning before, this Blog Post should save you some time getting started and help you understand how the new features was designed to work.\nHow to Video: Here is a video that shows you the process to use Custom Form Version Control. There are several steps involved with versioning, so I thought a video would be the best way to show you how the new feature works.\nHow to start with previous custom form This screen shot is a very important step to start with previous version of Custom Form. Use \u0026ldquo;New Form From\u0026rdquo; and select previous version. You will then have all the custom changes you made in previous version as a starting point for new version.\nLessons Learned:\nWhen you release a new Template version to the Catalog, make sure to use the \u0026ldquo;New Form From\u0026rdquo; to start with all previous changes. Custom Form Versioning makes it very easy to role back changes. Overall, nice new feature added to VMware Aria Automation 8.12. Links I found to be very helpful: VMware Blog: VMware Aria Automation April (8.12.0) – Custom Forms Version History When I write my blogs, I always say there are many ways to accomplish the same task. This article is just one way that you could accomplish this task. I am showing what I felt was a good way to complete the use case but every organization/environment will be different. There is no right or wrong way to complete the tasks in this article. "
+},
+{
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/orchestrator/",
 	"title": "Orchestrator",
 	"tags": [],
