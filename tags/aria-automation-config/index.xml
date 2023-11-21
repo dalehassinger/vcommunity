@@ -34,21 +34,8 @@
       <link>https://dalehassinger.github.io/vcommunity/resource-links/</link>
       <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://dalehassinger.github.io/vcommunity/resource-links/</guid>
-      <description>Resource Links:</description>
-    </item>
-    <item>
-      <title>vCommunity</title>
-      <link>https://dalehassinger.github.io/vcommunity/vcommunity/</link>
-      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/vcommunity/</guid>
-      <description>vCommunity:</description>
-    </item>
-    <item>
-      <title>VMware CMTY Podcast</title>
-      <link>https://dalehassinger.github.io/vcommunity/vcommunity/vmware-community-podcast/</link>
-      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://dalehassinger.github.io/vcommunity/vcommunity/vmware-community-podcast/</guid>
-      <description>Podcasts:</description>
+      <description>Links to some of my favorite Bloggers and Content:
+vCROCS | GitHub Repository: vCROCS | GitHub Repository Salt | Formulas Repository Bloggers | Youtube: Brock Peterson - VMware Aria Operations Master Christopher Kusek - The Forgotten Manual Tech Cosmin Trif - VMware Aria Suite Master LucD - PowerShell Master William Lam - VMware Master Yellow Bricks Don Horrox Corey Blaz VMware: VMware Operations Management Book - Great Book! code.VMware.com - Samples/Resources Learn vRealize Automation Learn SaltStack Config blogs.</description>
     </item>
   </channel>
 </rss>

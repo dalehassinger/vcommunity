@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Custom Form Versioning on </title>
+    <link>https://dalehassinger.github.io/vcommunity/tags/custom-form-versioning/</link>
+    <description>Recent content in Custom Form Versioning on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://dalehassinger.github.io/vcommunity/tags/custom-form-versioning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Custom Form Versioning</title>
+      <link>https://dalehassinger.github.io/vcommunity/aria-automation/service-broker/custom-form-versioning/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://dalehassinger.github.io/vcommunity/aria-automation/service-broker/custom-form-versioning/</guid>
+      <description>Custom Form Versioning Demo: VMware Aria Automation 8.12 Released: With the release of VMware Aria Automation 8.12, Custom Form Versioning was added to the Product. I use a lot Custom Forms with the Automation that I create, so I wanted to make sure I understood how the versioning feature worked. If you never did versioning before, this Blog Post should save you some time getting started and help you understand how the new features was designed to work.</description>
+    </item>
+  </channel>
+</rss>
