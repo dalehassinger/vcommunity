@@ -4,14 +4,14 @@
 	"title": "About this site",
 	"tags": ["Aria Operations", "Aria Operations for Logs", "Aria Automation", "Aria Automation Config", "Dale Hassinger"],
 	"description": "",
-	"content": "Your Resource to learn about Automation, Monitoring, Logging, more\u0026hellip; Monitoring: Automation: "
+	"content": "Your Resource to learn about Automation, Monitoring, Logging, more\u0026hellip; Monitoring:\nAutomation:\n"
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/about/",
 	"title": "About this site",
 	"tags": ["Aria Operations", "Aria Operations for Logs", "Aria Automation", "Aria Automation Config", "Dale Hassinger"],
 	"description": "",
-	"content": "This Site was created to share items with the vCommunity.\n"
+	"content": "This Site was created to share items with the vCommunity.\nWe get asked a lot of questions from customers about the VMware Aria Suite of Products. This site was created to share answers to those questions because we always feel that if this customer has that questions, other customers will also.\nIf we can answer questions with the VMware documentation, we will always do that first. The information you will find on this site is to help you understand the products better with screen shots, code examples, Tips/Tricks and \u0026ldquo;Real World\u0026rdquo; examples.\n"
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/assembler/action-constant-and-secrets/",
