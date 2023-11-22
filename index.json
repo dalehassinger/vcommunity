@@ -1,24 +1,31 @@
 [
 {
-	"uri": "https://dalehassinger.github.io/vcommunity/",
-	"title": "About this site",
-	"tags": ["Aria Operations", "Aria Operations for Logs", "Aria Automation", "Aria Automation Config", "Dale Hassinger"],
+	"uri": "https://dalehassinger.github.io/vcommunity/aria-operations/dashboards/",
+	"title": "",
+	"tags": [],
 	"description": "",
-	"content": "Your Resource to learn about Automation, Monitoring, Logging, more\u0026hellip; Monitoring:\nAutomation:\n"
+	"content": "Dashboards:\n"
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/about/",
-	"title": "About this site",
-	"tags": ["Aria Operations", "Aria Operations for Logs", "Aria Automation", "Aria Automation Config", "Dale Hassinger"],
+	"title": "About",
+	"tags": [],
 	"description": "",
 	"content": "\nTitle: Unlocking the Potential\nTopics: VMware Aria Suite and more\u0026hellip;\nIntroduction:\nWelcome to our Blog site! We\u0026rsquo;re excited to have you here as part of the vCommunity. This platform was born out of a passion for sharing knowledge and expertise regarding the VMware Aria Suite of Products. We recognize that our customers often have burning questions and inquiries about these powerful solutions. Our mission is to provide clear and insightful answers to these queries, benefiting not only the inquisitive individuals who ask but also the broader community who might have similar concerns.\nWhy We Exist:\nCustomers\u0026rsquo; questions are the driving force behind this initiative. When someone reaches out with a question, we see it as an opportunity to facilitate a collective learning experience. If one customer has a question, there\u0026rsquo;s a good chance others do too. By openly sharing our insights and solutions, we aim to create a valuable resource that enhances your understanding of VMware\u0026rsquo;s Aria Suite.\nOur Approach:\nAt the heart of our commitment lies a dedication to leveraging VMware\u0026rsquo;s official documentation as our primary source of information. Whenever possible, we will direct you to official resources because we believe in the accuracy and reliability they offer. However, we also recognize that real-world scenarios often demand practical, hands-on guidance. That\u0026rsquo;s where we come in.\nWhat You\u0026rsquo;ll Discover Here: When you explore our blog, you\u0026rsquo;ll encounter a wealth of resources designed to empower your journey with VMware\u0026rsquo;s Aria Suite:\nScreen Shots: Visual aids can be immensely helpful in understanding complex concepts. We provide detailed screen captures to guide you through various processes and configurations.\nCode Examples: Many challenges in the technical world require a bit of coding finesse. We offer code snippets and examples to simplify intricate tasks and customization.\nTips and Tricks: Our seasoned experts share their insights, revealing the tips and tricks that can make your VMware Aria experience more efficient and enjoyable.\n\u0026ldquo;Real World\u0026rdquo; Examples: We believe in the power of real-world use cases. Our blog will feature practical examples and case studies, showcasing how VMware\u0026rsquo;s Aria Suite can address common challenges faced by businesses and organizations.\nThank you for visiting\nStay tuned for our upcoming blog posts, and feel free to reach out with any questions or topics you\u0026rsquo;d like us to cover. Your feedback and participation are highly appreciated.\n"
 },
 {
+	"uri": "https://dalehassinger.github.io/vcommunity/",
+	"title": "About this site",
+	"tags": [],
+	"description": "",
+	"content": "Your Resource to learn about Automation, Monitoring, Logging, more\u0026hellip; Monitoring:\nAutomation:\n"
+},
+{
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/assembler/action-constant-and-secrets/",
 	"title": "Action Constants and Secrets",
-	"tags": ["Aria Automation", "Action Constants", "Secrets", "Assembler", "Dale Hassinger"],
+	"tags": [],
 	"description": "",
-	"content": "VMware Aria Automation | Action Constants and Secrets: VMware Aria Automation 8.14 was used for this Blog Post. When new versions of VMware Aria Automation are released, the code may need to be changed.\nAll the source code for this Blog is saved in my GitHub Repository. Click on the links within the blog to access the code.\nI wanted to share how I use Action Constants and Secrets within VMware Aria Automation. Action Constants are a great to have a variable that can be used with many Actions where the value may change. Instead of having to edit 10s or 100s of Actions, you change One Action Constant and all the Actions are updated instantly. Main reason to use Secrets is to keep the values of Passwords out of the code! Plus, like Action Constants, if a Password would change, all you need to do is change one Secret and all your Actions and Templates are automatically Updated. Secrets can also be used in the yaml code of Templates.\nAction Constants Action Constants Use Cases:\nvCenter Username vCenter FQDN VMware Aria Automation Config Username VMware Aria Automation Config FQDN salt master FQDN Any value used in Actions that may change from time to time To access Action Constants: Assembler/Extensibility/Actions/Actions Constants\nYou will see the Action Constants Names and Values. How to use Action Constants and Secrets with an Action:\nAdd the Action Constants and Secrets used within the Action in the Default inputs section. To use a Action Constant value within the Action PowerShell code use $inputs.\u0026ldquo;Action Constant\u0026rdquo; To use a Secret value within the Action PowerShell code use $context.getSecret($inputs.\u0026ldquo;Secret Name\u0026rdquo;) In the example code, review how I am connecting to the vCenter. No hard coded Username, Password or vCenter FQDN. If any of these values would change, I would never need to edit the Action, only the Action Constants and Secret. Link to code | GitHub Repository Secrets Secrets Use Cases:\nPasswords Any value you don\u0026rsquo;t want displayed in plain text within your code To access Secrets: Assembler/Infrastructure/Secrets/Secrets\nYou will see the Secret Names and Description only. You can never see the Secret value after you create it. If you think the value is not correct you need to re-enter the value. How to use Secrets with an Template:\nAdd code to the template yaml that is like this: password: \u0026lsquo;${secret.UbuntuPassword}\u0026rsquo; See Screen Shot Links to resources about Actions Constants and Secrets: Secret Automation Assembler properties How can I create extensibility action constants When I write my blogs, I always say there are many ways to accomplish the same task. This article is just one way that you could accomplish this task. I am showing what I felt was a good way to complete the use case but every organization/environment will be different. There is no right or wrong way to complete the tasks in this article. "
+	"content": "VMware Aria Automation | Action Constants and Secrets: VMware Aria Automation 8.14 was used for this Blog Post. When new versions of VMware Aria Automation are released, the code may need to be changed.\nAll the source code for this Blog is saved in my GitHub Repository. Click on the links within the blog to access the code.\nI wanted to share how I use Action Constants and Secrets within VMware Aria Automation. Action Constants are a great to have a variable that can be used with many Actions where the value may change. Instead of having to edit 10s or 100s of Actions, you change One Action Constant and all the Actions are updated instantly. Main reason to use Secrets is to keep the values of Passwords out of the code! Plus, like Action Constants, if a Password would change, all you need to do is change one Secret and all your Actions and Templates are automatically Updated. Secrets can also be used in the yaml code of Templates.\nAction Constants Action Constants Use Cases:\nvCenter Username vCenter FQDN VMware Aria Automation Config Username VMware Aria Automation Config FQDN salt master FQDN Any value used in Actions that may change from time to time To access Action Constants: Assembler/Extensibility/Actions/Actions Constants\nYou will see the Action Constants Names and Values. How to use Action Constants and Secrets with an Action:\nAdd the Action Constants and Secrets used within the Action in the Default inputs section. To use a Action Constant value within the Action PowerShell code use $inputs.\u0026ldquo;Action Constant\u0026rdquo; To use a Secret value within the Action PowerShell code use $context.getSecret($inputs.\u0026ldquo;Secret Name\u0026rdquo;) In the example code, review how I am connecting to the vCenter. No hard coded Username, Password or vCenter FQDN. If any of these values would change, I would never need to edit the Action, only the Action Constants and Secret. Link to code | GitHub Repository Secrets Secrets Use Cases:\nPasswords Any value you don\u0026rsquo;t want displayed in plain text within your code To access Secrets: Assembler/Infrastructure/Secrets/Secrets\nYou will see the Secret Names and Description only. You can never see the Secret value after you create it. If you think the value is not correct you need to re-enter the value. How to use Secrets with an Template:\nAdd code to the template yaml that is like this: password: \u0026lsquo;${secret.UbuntuPassword}\u0026rsquo; See Screen Shot Links to resources about Actions Constants and Secrets: Secret Automation Assembler properties How can I create extensibility action constants Article Information: Created By: Dale Hassinger TAGs: #AriaAutomation, #ActionConstants, #Secrets "
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/",
@@ -44,21 +51,28 @@
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/service-broker/custom-form-versioning/",
 	"title": "Custom Form Versioning",
-	"tags": ["Aria Automation", "Custom Form Versioning", "Service Broker", "Dale Hassinger"],
+	"tags": [],
 	"description": "",
-	"content": "Custom Form Versioning Demo: VMware Aria Automation 8.12 Released: With the release of VMware Aria Automation 8.12, Custom Form Versioning was added to the Product. I use a lot Custom Forms with the Automation that I create, so I wanted to make sure I understood how the versioning feature worked. If you never did versioning before, this Blog Post should save you some time getting started and help you understand how the new features was designed to work.\nHow to Video: Here is a video that shows you the process to use Custom Form Version Control. There are several steps involved with versioning, so I thought a video would be the best way to show you how the new feature works.\nHow to start with previous custom form This screen shot is a very important step to start with previous version of Custom Form. Use \u0026ldquo;New Form From\u0026rdquo; and select previous version. You will then have all the custom changes you made in previous version as a starting point for new version.\nLessons Learned:\nWhen you release a new Template version to the Catalog, make sure to use the \u0026ldquo;New Form From\u0026rdquo; to start with all previous changes. Custom Form Versioning makes it very easy to role back changes. Overall, nice new feature added to VMware Aria Automation 8.12. Links I found to be very helpful: VMware Blog: VMware Aria Automation April (8.12.0) – Custom Forms Version History When I write my blogs, I always say there are many ways to accomplish the same task. This article is just one way that you could accomplish this task. I am showing what I felt was a good way to complete the use case but every organization/environment will be different. There is no right or wrong way to complete the tasks in this article. "
+	"content": "Custom Form Versioning Demo: VMware Aria Automation 8.12 Released: With the release of VMware Aria Automation 8.12, Custom Form Versioning was added to the Product. I use a lot Custom Forms with the Automation that I create, so I wanted to make sure I understood how the versioning feature worked. If you never did versioning before, this Blog Post should save you some time getting started and help you understand how the new features was designed to work.\nHow to Video: Here is a video that shows you the process to use Custom Form Version Control. There are several steps involved with versioning, so I thought a video would be the best way to show you how the new feature works.\nHow to start with previous custom form This screen shot is a very important step to start with previous version of Custom Form. Use \u0026ldquo;New Form From\u0026rdquo; and select previous version. You will then have all the custom changes you made in previous version as a starting point for new version.\nLessons Learned: When you release a new Template version to the Catalog, make sure to use the \u0026ldquo;New Form From\u0026rdquo; to start with all previous changes. Custom Form Versioning makes it very easy to role back changes. Overall, nice new feature added to VMware Aria Automation 8.12. Links I found to be very helpful: VMware Blog: VMware Aria Automation April (8.12.0) – Custom Forms Version History Article Information: Created By: Dale Hassinger TAGs: #AriaOperations, #CustomFormVersioning, #YouTubeVideo "
+},
+{
+	"uri": "https://dalehassinger.github.io/vcommunity/aria-operations/metric-searching/",
+	"title": "Metric-Searching",
+	"tags": [],
+	"description": "",
+	"content": "Metric Searching:\n"
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/powercli/",
 	"title": "PowerCLI",
-	"tags": ["Aria Operations", "Aria Operations for Logs", "Aria Automation", "Aria Automation Config", "Dale Hassinger"],
+	"tags": [],
 	"description": "",
 	"content": "PowerCLI Scripts:\n"
 },
 {
 	"uri": "https://dalehassinger.github.io/vcommunity/resource-links/",
 	"title": "Resource Links",
-	"tags": ["Aria Operations", "Aria Operations for Logs", "Aria Automation", "Aria Automation Config", "Dale Hassinger"],
+	"tags": [],
 	"description": "",
 	"content": "Links to some of my favorite Bloggers and Content:\nvCROCS | GitHub Repository: vCROCS | GitHub Repository Salt | Formulas Repository Bloggers | Youtube: Brock Peterson - VMware Aria Operations Master Christopher Kusek - The Forgotten Manual Tech Cosmin Trif - VMware Aria Suite Master LucD - PowerShell Master William Lam - VMware Master Yellow Bricks Don Horrox Corey Blaz VMware: VMware Operations Management Book - Great Book! code.VMware.com - Samples/Resources Learn vRealize Automation Learn SaltStack Config blogs.VMware.com PowerShell PowerCLI VMware PowerCLI Cmdlets by Product vRealize Automation vRealize Operations vRealize Log Insight ports.VMware.com - Good Link when you live in a Zero trust environment Podcasts: The PowerShell Podcast Virtually Speaking Podcast Mac Power Users - MPU The Hacks - Powered By SaltStack VMware Communities Roundtable IT Reality Podcast "
 },
@@ -126,83 +140,6 @@
 	"content": "Podcasts:\n"
 },
 {
-	"uri": "https://dalehassinger.github.io/vcommunity/tags/action-constants/",
-	"title": "Action Constants",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/tags/aria-automation/",
-	"title": "Aria Automation",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/tags/aria-automation-config/",
-	"title": "Aria Automation Config",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/tags/aria-operations/",
-	"title": "Aria Operations",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/tags/aria-operations-for-logs/",
-	"title": "Aria Operations for Logs",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/tags/assembler/",
-	"title": "Assembler",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/tags/custom-form-versioning/",
-	"title": "Custom Form Versioning",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/tags/dale-hassinger/",
-	"title": "Dale Hassinger",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/tags/secrets/",
-	"title": "Secrets",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/tags/service-broker/",
-	"title": "Service Broker",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "https://dalehassinger.github.io/vcommunity/tags/",
-	"title": "Tags",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://dalehassinger.github.io/vcommunity/aria-operations/reports/",
 	"title": "Reports",
 	"tags": [],
@@ -236,4 +173,11 @@
 	"tags": [],
 	"description": "",
 	"content": " Automation | Monitoring | Logging\n"
+},
+{
+	"uri": "https://dalehassinger.github.io/vcommunity/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
 }]

@@ -2,10 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dalehassinger.github.io/vcommunity/</loc>
+    <loc>https://dalehassinger.github.io/vcommunity/aria-operations/dashboards/</loc>
     <lastmod>2023-11-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/about/</loc>
+    <lastmod>2023-11-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dalehassinger.github.io/vcommunity/</loc>
     <lastmod>2023-11-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/aria-automation/assembler/action-constant-and-secrets/</loc>
@@ -21,6 +24,9 @@
     <lastmod>2023-11-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/aria-automation/service-broker/custom-form-versioning/</loc>
+    <lastmod>2023-11-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dalehassinger.github.io/vcommunity/aria-operations/metric-searching/</loc>
     <lastmod>2023-11-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/powercli/</loc>
@@ -52,39 +58,6 @@
     <loc>https://dalehassinger.github.io/vcommunity/vcommunity/vmware-community-podcast/</loc>
     <lastmod>2023-11-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/tags/action-constants/</loc>
-    <lastmod>2023-11-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/tags/aria-automation/</loc>
-    <lastmod>2023-11-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/tags/aria-automation-config/</loc>
-    <lastmod>2023-11-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/tags/aria-operations/</loc>
-    <lastmod>2023-11-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/tags/aria-operations-for-logs/</loc>
-    <lastmod>2023-11-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/tags/assembler/</loc>
-    <lastmod>2023-11-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/tags/custom-form-versioning/</loc>
-    <lastmod>2023-11-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/tags/dale-hassinger/</loc>
-    <lastmod>2023-11-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/tags/secrets/</loc>
-    <lastmod>2023-11-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/tags/service-broker/</loc>
-    <lastmod>2023-11-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dalehassinger.github.io/vcommunity/tags/</loc>
-    <lastmod>2023-11-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/aria-operations/reports/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url><url>
@@ -96,5 +69,7 @@
     <loc>https://dalehassinger.github.io/vcommunity/_footer/</loc>
   </url><url>
     <loc>https://dalehassinger.github.io/vcommunity/_header/</loc>
+  </url><url>
+    <loc>https://dalehassinger.github.io/vcommunity/tags/</loc>
   </url>
 </urlset>
