@@ -133,6 +133,27 @@
 	"content": "Targets:\n"
 },
 {
+	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/assembler/templates/",
+	"title": "Templates",
+	"tags": [],
+	"description": "",
+	"content": "Templates: "
+},
+{
+	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation/assembler/templates/windows-server-with-saltstack-resource/",
+	"title": "Windows Server with SaltStack resource",
+	"tags": [],
+	"description": "",
+	"content": "Windows Server with SaltStack resource: Here is the template yaml code to create a Windows Server and use the SaltStack Resource.\nformatVersion: 1 inputs: CustomizationSpec: type: string description: Customization Specification default: CustomSpec-W2k19 title: CustomizationSpec VMName: type: string title: VM Name minLength: 1 maxLength: 15 default: WIN-19-000 IP: type: string default: 192.168.0.200 EDrive: type: integer title: E-Drive default: 0 description: Enter 0 to disable the disk and not create LDrive: type: integer title: L-Drive default: 0 description: Enter 0 to disable the disk and not create TDrive: type: integer title: T-Drive default: 0 description: Enter 0 to disable the disk and not create Size: type: string title: Size description: Selecting SQL will format all DATA drives with 64k allocation. default: vCenter-Medium-1-2 enum: - vCenter-Small-1-1 - vCenter-Medium-1-2 - vCenter-Large-1-4 - vCenter-X-Large-1-8 SQL: type: string title: SQL description: Selecting SQL will format all DATA drives with 64k allocation. default: \u0026#39;False\u0026#39; enum: - \u0026#39;True\u0026#39; - \u0026#39;False\u0026#39; resources: Network: type: Cloud.Network properties: networkType: existing constraints: - tag: Network:PROD-VMs Virtual_Machine: type: Cloud.Machine properties: image: vCenter-W2K19 flavor: ${input.Size} customizationSpec: ${input.CustomizationSpec} name: ${input.VMName} remoteAccess: authentication: usernamePassword username: administrator password: VMware1! networks: - network: ${resource.Network.id} assignment: static address: ${input.IP} attachedDisks: ${map_to_object(resource.Cloud_Volume_E[*].id + resource.Cloud_Volume_L[*].id + resource.Cloud_Volume_T[*].id , \u0026#34;source\u0026#34;)} edrivesize: ${input.EDrive} ldrivesize: ${input.LDrive} sql: ${input.SQL} # - VMware Max SCSI Controllers is 4 # - VMware Max Unit per SCSI Controllers is 15 Cloud_Volume_E: type: Cloud.Volume properties: capacityGb: ${input.EDrive} count: \u0026#39;${input.EDrive == 0 ? 0 : 1 }\u0026#39; SCSIController: SCSI_Controller_1 unitNumber: 0 provisioningType: thin Cloud_Volume_L: type: Cloud.Volume properties: capacityGb: ${input.LDrive} count: \u0026#39;${input.LDrive == 0 ? 0 : 1 }\u0026#39; SCSIController: SCSI_Controller_1 unitNumber: 1 provisioningType: thin Cloud_Volume_T: type: Cloud.Volume properties: capacityGb: ${input.TDrive} count: \u0026#39;${input.TDrive == 0 ? 0 : 1 }\u0026#39; SCSIController: SCSI_Controller_1 unitNumber: 2 provisioningType: thin Cloud_SaltStack_1: type: Cloud.SaltStack properties: hosts: - ${resource.Virtual_Machine.id} masterId: saltstack_enterprise_installer stateFiles: #[] - /states/windows-server-new-drives.sls saltEnvironment: base additionalMinionParams: grains: vCROCS_Roles: - webserver - database vCROCS_Drive_E_Size: - ${input.EDrive} vCROCS_Drive_L_Size: - ${input.LDrive} vCROCS_Drive_T_Size: - ${input.TDrive} vCROCS_SQL: - ${input.SQL} Article Information: Created By: Dale Hassinger TAGs: #AriaAutomation, #Template, #SaltStackResource, #WindowsServer "
+},
+{
+	"uri": "https://dalehassinger.github.io/vcommunity/aria-automation-config/states/windows-service/",
+	"title": "Windows Service",
+	"tags": [],
+	"description": "",
+	"content": "Windows Service:\n# State file for Windows Services # This state can be changed to work with any Windows Service # Change the name to match the service name you want to use # Example on how to run state.apply from cli # salt \u0026#34;WIN-19-001\u0026#34; state.apply states.spooler # Stop a Windows Service stop_service: service.dead: - name: spooler # Start a Windows Service and Startup will be Automatic Start_service: service.running: - enable: True - name: spooler # Disable a Windows Service disable_service: service.disabled: - name: spooler Article Information: Created By: Dale Hassinger TAGs: #AriaAutomationConfig, #State, #WindowsService, #WindowsServer "
+},
+{
 	"uri": "https://dalehassinger.github.io/vcommunity/vcommunity/vmware-community-podcast/",
 	"title": "VMware CMTY Podcast",
 	"tags": [],

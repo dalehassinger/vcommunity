@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2023-11-24T06:11:37 EST">
+<title>Windows Server with SaltStack resource :: </title>
+<link rel="shortcut icon" href="/vcommunity/images/favicon.png" type="image/x-icon" />
+<link href="/vcommunity/css/nucleus.css" rel="stylesheet">
+<link href="/vcommunity/css/font-awesome.min.css" rel="stylesheet">
+<link href="/vcommunity/css/featherlight.min.css" rel="stylesheet">
+<link href="/vcommunity/css/auto-complete.css" rel="stylesheet">
+<link href="/vcommunity/theme-flex/style.css" rel="stylesheet">
+
+	<link href="/vcommunity/theme-flex/variant-blue.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/vcommunity/css/bootstrap.min.css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79101-13', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    
+  </head>
+  <body data-url="/vcommunity/aria-automation/assembler/templates/windows-server-with-saltstack-resource/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <p><a href="/vcommunity/"><span class="fa fa-home" aria-hidden="true"></span> Automation | Monitoring | Logging</a></p>
+
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="" target="_blank" rel="noopener">
+                  
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://www.vcrocs.info" target="_blank" rel="noopener">
+                  <i class='fa fa-newspaper-o'></i> <label>Dale's Blog</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://www.brockpeterson.com" target="_blank" rel="noopener">
+                  <i class='fa fa-book'></i> <label>Brock's Blog</label>
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+    <li data-nav-id="https://dalehassinger.github.io/vcommunity/about/" class="dd-item
+        ">
+      <div>
+      <a href="/vcommunity/about/">About</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://dalehassinger.github.io/vcommunity/aria-automation/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vcommunity/aria-automation/">Aria Automation</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://dalehassinger.github.io/vcommunity/aria-automation/assembler/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vcommunity/aria-automation/assembler/">Assembler</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://dalehassinger.github.io/vcommunity/aria-automation/assembler/action-constant-and-secrets/" class="dd-item
+        ">
+      <div>
+      <a href="/vcommunity/aria-automation/assembler/action-constant-and-secrets/">Action Constants and Secrets</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://dalehassinger.github.io/vcommunity/aria-automation/assembler/templates/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vcommunity/aria-automation/assembler/templates/">Templates</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://dalehassinger.github.io/vcommunity/aria-automation/assembler/templates/windows-server-with-saltstack-resource/" class="dd-item
+        ">
+      <div>
+      <a href="/vcommunity/aria-automation/assembler/templates/windows-server-with-saltstack-resource/">Windows Server with SaltStack resource</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://dalehassinger.github.io/vcommunity/aria-automation/orchestrator/" class="dd-item
+        ">
+      <div>
+      <a href="/vcommunity/aria-automation/orchestrator/">Orchestrator</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://dalehassinger.github.io/vcommunity/aria-automation/service-broker/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vcommunity/aria-automation/service-broker/">Service Broker</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://dalehassinger.github.io/vcommunity/aria-automation/service-broker/custom-form-versioning/" class="dd-item
+        ">
+      <div>
+      <a href="/vcommunity/aria-automation/service-broker/custom-form-versioning/">Custom Form Versioning</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://dalehassinger.github.io/vcommunity/aria-automation-config/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vcommunity/aria-automation-config/">Aria Automation Config</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://dalehassinger.github.io/vcommunity/aria-automation-config/states/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vcommunity/aria-automation-config/states/">States</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://dalehassinger.github.io/vcommunity/aria-automation-config/states/windows-service/" class="dd-item
+        ">
+      <div>
+      <a href="/vcommunity/aria-automation-config/states/windows-service/">Windows Service</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://dalehassinger.github.io/vcommunity/aria-automation-config/targets/" class="dd-item
+        ">
+      <div>
+      <a href="/vcommunity/aria-automation-config/targets/">Targets</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://dalehassinger.github.io/vcommunity/aria-operations/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vcommunity/aria-operations/">Aria Operations</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://dalehassinger.github.io/vcommunity/aria-operations/dashboards/" class="dd-item
+        ">
+      <div>
+      <a href="/vcommunity/aria-operations/dashboards/"></a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://dalehassinger.github.io/vcommunity/aria-operations/metric-searching/" class="dd-item
+        ">
+      <div>
+      <a href="/vcommunity/aria-operations/metric-searching/">Metric-Searching</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://dalehassinger.github.io/vcommunity/aria-operations/reports/" class="dd-item
+        ">
+      <div>
+      <a href="/vcommunity/aria-operations/reports/">Reports</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://dalehassinger.github.io/vcommunity/aria-operations/views/" class="dd-item
+        ">
+      <div>
+      <a href="/vcommunity/aria-operations/views/">Views</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://dalehassinger.github.io/vcommunity/aria-operations-for-logs/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vcommunity/aria-operations-for-logs/">Aria Operations for Logs</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://dalehassinger.github.io/vcommunity/aria-operations-for-logs/alerts/" class="dd-item
+        ">
+      <div>
+      <a href="/vcommunity/aria-operations-for-logs/alerts/">Alerts</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="https://dalehassinger.github.io/vcommunity/powercli/" class="dd-item
+        ">
+      <div>
+      <a href="/vcommunity/powercli/">PowerCLI</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://dalehassinger.github.io/vcommunity/resource-links/" class="dd-item
+        ">
+      <div>
+      <a href="/vcommunity/resource-links/">Resource Links</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="https://dalehassinger.github.io/vcommunity/vcommunity/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/vcommunity/vcommunity/">vCommunity</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+    <li data-nav-id="https://dalehassinger.github.io/vcommunity/vcommunity/vmware-community-podcast/" class="dd-item
+        ">
+      <div>
+      <a href="/vcommunity/vcommunity/vmware-community-podcast/">VMware CMTY Podcast</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section><center>
+
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/vcommunity/about/" >
+   About</option>
+    <option value="/vcommunity/aria-automation/" >
+   Aria Automation</option> 
+    <option value="/vcommunity/aria-automation/assembler/" >
+   Assembler</option> 
+    <option value="/vcommunity/aria-automation/assembler/action-constant-and-secrets/" >
+   Action Constants and Secrets</option>
+    <option value="/vcommunity/aria-automation/assembler/templates/" >
+   Templates</option> 
+    <option value="/vcommunity/aria-automation/assembler/templates/windows-server-with-saltstack-resource/"  selected>
+   Windows Server with SaltStack resource</option>
+  
+  
+    <option value="/vcommunity/aria-automation/orchestrator/" >
+   Orchestrator</option>
+    <option value="/vcommunity/aria-automation/service-broker/" >
+   Service Broker</option>
+  
+    <option value="/vcommunity/aria-automation-config/" >
+   Aria Automation Config</option>
+    <option value="/vcommunity/aria-operations/" >
+   Aria Operations</option>
+    <option value="/vcommunity/aria-operations-for-logs/" >
+   Aria Operations for Logs</option>
+    <option value="/vcommunity/powercli/" >
+   PowerCLI</option>
+    <option value="/vcommunity/resource-links/" >
+   Resource Links</option>
+    <option value="/vcommunity/vcommunity/" >
+   vCommunity</option>
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+      </div>
+    
+
+    <h1>Windows Server with SaltStack resource</h1>
+    
+    
+    
+
+<h5 id="windows-server-with-saltstack-resource">Windows Server with SaltStack resource:</h5>
+<p>Here is the template yaml code to create a Windows Server and use the SaltStack Resource.</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">formatVersion</span><span style="color:#111">:</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">inputs</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">CustomizationSpec</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span><span style="color:#111">:</span> <span style="color:#ae81ff">string</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">description</span><span style="color:#111">:</span> <span style="color:#ae81ff">Customization Specification</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">default</span><span style="color:#111">:</span> <span style="color:#ae81ff">CustomSpec-W2k19</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">title</span><span style="color:#111">:</span> <span style="color:#ae81ff">CustomizationSpec</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">VMName</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span><span style="color:#111">:</span> <span style="color:#ae81ff">string</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">title</span><span style="color:#111">:</span> <span style="color:#ae81ff">VM Name</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">minLength</span><span style="color:#111">:</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">maxLength</span><span style="color:#111">:</span> <span style="color:#ae81ff">15</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">default</span><span style="color:#111">:</span> <span style="color:#ae81ff">WIN-19-000</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">IP</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span><span style="color:#111">:</span> <span style="color:#ae81ff">string</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">default</span><span style="color:#111">:</span> <span style="color:#ae81ff">192.168.0.200</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">EDrive</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span><span style="color:#111">:</span> <span style="color:#ae81ff">integer</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">title</span><span style="color:#111">:</span> <span style="color:#ae81ff">E-Drive</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">default</span><span style="color:#111">:</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">description</span><span style="color:#111">:</span> <span style="color:#ae81ff">Enter 0 to disable the disk and not create</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">LDrive</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span><span style="color:#111">:</span> <span style="color:#ae81ff">integer</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">title</span><span style="color:#111">:</span> <span style="color:#ae81ff">L-Drive</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">default</span><span style="color:#111">:</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">description</span><span style="color:#111">:</span> <span style="color:#ae81ff">Enter 0 to disable the disk and not create</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">TDrive</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span><span style="color:#111">:</span> <span style="color:#ae81ff">integer</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">title</span><span style="color:#111">:</span> <span style="color:#ae81ff">T-Drive</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">default</span><span style="color:#111">:</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">description</span><span style="color:#111">:</span> <span style="color:#ae81ff">Enter 0 to disable the disk and not create</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">Size</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span><span style="color:#111">:</span> <span style="color:#ae81ff">string</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">title</span><span style="color:#111">:</span> <span style="color:#ae81ff">Size</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">description</span><span style="color:#111">:</span> <span style="color:#ae81ff">Selecting SQL will format all DATA drives with 64k allocation.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">default</span><span style="color:#111">:</span> <span style="color:#ae81ff">vCenter-Medium-1-2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">enum</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">vCenter-Small-1-1</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">vCenter-Medium-1-2</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">vCenter-Large-1-4</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">vCenter-X-Large-1-8</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">SQL</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span><span style="color:#111">:</span> <span style="color:#ae81ff">string</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">title</span><span style="color:#111">:</span> <span style="color:#ae81ff">SQL</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">description</span><span style="color:#111">:</span> <span style="color:#ae81ff">Selecting SQL will format all DATA drives with 64k allocation.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">default</span><span style="color:#111">:</span> <span style="color:#d88200">&#39;False&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">enum</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#d88200">&#39;True&#39;</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#d88200">&#39;False&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">resources</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">Network</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span><span style="color:#111">:</span> <span style="color:#ae81ff">Cloud.Network</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">properties</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">networkType</span><span style="color:#111">:</span> <span style="color:#ae81ff">existing</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">constraints</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">tag</span><span style="color:#111">:</span> <span style="color:#ae81ff">Network:PROD-VMs</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">Virtual_Machine</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span><span style="color:#111">:</span> <span style="color:#ae81ff">Cloud.Machine</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">properties</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">image</span><span style="color:#111">:</span> <span style="color:#ae81ff">vCenter-W2K19</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">flavor</span><span style="color:#111">:</span> <span style="color:#ae81ff">${input.Size}</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">customizationSpec</span><span style="color:#111">:</span> <span style="color:#ae81ff">${input.CustomizationSpec}</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">name</span><span style="color:#111">:</span> <span style="color:#ae81ff">${input.VMName}</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">remoteAccess</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">authentication</span><span style="color:#111">:</span> <span style="color:#ae81ff">usernamePassword</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">username</span><span style="color:#111">:</span> <span style="color:#ae81ff">administrator</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">password</span><span style="color:#111">:</span> <span style="color:#ae81ff">VMware1!</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">networks</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">network</span><span style="color:#111">:</span> <span style="color:#ae81ff">${resource.Network.id}</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">assignment</span><span style="color:#111">:</span> <span style="color:#ae81ff">static</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">address</span><span style="color:#111">:</span> <span style="color:#ae81ff">${input.IP}</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">attachedDisks</span><span style="color:#111">:</span> <span style="color:#ae81ff">${map_to_object(resource.Cloud_Volume_E[*].id + resource.Cloud_Volume_L[*].id + resource.Cloud_Volume_T[*].id , &#34;source&#34;)}</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">edrivesize</span><span style="color:#111">:</span> <span style="color:#ae81ff">${input.EDrive}</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">ldrivesize</span><span style="color:#111">:</span> <span style="color:#ae81ff">${input.LDrive}</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">sql</span><span style="color:#111">:</span> <span style="color:#ae81ff">${input.SQL}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># - VMware Max SCSI Controllers is 4</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># - VMware Max Unit per SCSI Controllers is 15</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">Cloud_Volume_E</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span><span style="color:#111">:</span> <span style="color:#ae81ff">Cloud.Volume</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">properties</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">capacityGb</span><span style="color:#111">:</span> <span style="color:#ae81ff">${input.EDrive}</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">count</span><span style="color:#111">:</span> <span style="color:#d88200">&#39;${input.EDrive == 0 ? 0 : 1 }&#39;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">SCSIController</span><span style="color:#111">:</span> <span style="color:#ae81ff">SCSI_Controller_1</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">unitNumber</span><span style="color:#111">:</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">provisioningType</span><span style="color:#111">:</span> <span style="color:#ae81ff">thin</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">Cloud_Volume_L</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span><span style="color:#111">:</span> <span style="color:#ae81ff">Cloud.Volume</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">properties</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">capacityGb</span><span style="color:#111">:</span> <span style="color:#ae81ff">${input.LDrive}</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">count</span><span style="color:#111">:</span> <span style="color:#d88200">&#39;${input.LDrive == 0 ? 0 : 1 }&#39;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">SCSIController</span><span style="color:#111">:</span> <span style="color:#ae81ff">SCSI_Controller_1</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">unitNumber</span><span style="color:#111">:</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">provisioningType</span><span style="color:#111">:</span> <span style="color:#ae81ff">thin</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">Cloud_Volume_T</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span><span style="color:#111">:</span> <span style="color:#ae81ff">Cloud.Volume</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">properties</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">capacityGb</span><span style="color:#111">:</span> <span style="color:#ae81ff">${input.TDrive}</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">count</span><span style="color:#111">:</span> <span style="color:#d88200">&#39;${input.TDrive == 0 ? 0 : 1 }&#39;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">SCSIController</span><span style="color:#111">:</span> <span style="color:#ae81ff">SCSI_Controller_1</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">unitNumber</span><span style="color:#111">:</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">provisioningType</span><span style="color:#111">:</span> <span style="color:#ae81ff">thin</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">Cloud_SaltStack_1</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span><span style="color:#111">:</span> <span style="color:#ae81ff">Cloud.SaltStack</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">properties</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">hosts</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">${resource.Virtual_Machine.id}</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">masterId</span><span style="color:#111">:</span> <span style="color:#ae81ff">saltstack_enterprise_installer</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">stateFiles</span><span style="color:#111">:</span> <span style="color:#75715e">#[]</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#ae81ff">/states/windows-server-new-drives.sls</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">saltEnvironment</span><span style="color:#111">:</span> <span style="color:#ae81ff">base</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">additionalMinionParams</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">grains</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">vCROCS_Roles</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>            - <span style="color:#ae81ff">webserver</span>
+</span></span><span style="display:flex;"><span>            - <span style="color:#ae81ff">database</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">vCROCS_Drive_E_Size</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>            - <span style="color:#ae81ff">${input.EDrive}</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">vCROCS_Drive_L_Size</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>            - <span style="color:#ae81ff">${input.LDrive}</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">vCROCS_Drive_T_Size</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>            - <span style="color:#ae81ff">${input.TDrive}</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">vCROCS_SQL</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>            - <span style="color:#ae81ff">${input.SQL}</span></span></span></code></pre></div>
+<hr>
+
+<div class="panel panel-info"><div class="panel-heading"><strong>Article Information:</strong></div><div class="panel-body"><ul>
+<li><strong>Created By:</strong> Dale Hassinger</li>
+<li><strong>TAGs:</strong> #AriaAutomation, #Template, #SaltStackResource, #WindowsServer</li>
+</ul>
+</div></div>
+
+
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/vcommunity/aria-automation/assembler/templates/" title="Templates"> <i class="fa fa-chevron-left"></i><label>Templates</label></a>
+    <a class="nav nav-next" href="/vcommunity/aria-automation/service-broker/" title="Service Broker" style="margin-right: 0px;"><label>Service Broker</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+
+    
+  </div>
+
+
+	<div>
+
+
+  
+    <p>Created By: <a href="https://github.com/vjeantet/hugo-theme-docdock">Dale Hassinger</a> and <a href="https://github.com/vjeantet/hugo-theme-docdock">Brock Peterson</a></p>
+
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/vcommunity/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/dalehassinger.github.io\/vcommunity\/";
+    
+</script>
+<script src="/vcommunity/js/clipboard.min.js"></script>
+<script src="/vcommunity/js/featherlight.min.js"></script>
+
+<script type="text/javascript" src="/vcommunity/js/lunr.min.js"></script>
+<script type="text/javascript" src="/vcommunity/js/auto-complete.js"></script>
+<script type="text/javascript" src="/vcommunity/js/search.js"></script>
+<script src="/vcommunity/theme-flex/script.js"></script>
+
+
+
+
+<script src="https://dalehassinger.github.io/vcommunity/js/scripts.min.js"></script>
+    
+
+    
+    
+
+    
+  </body>
+</html>

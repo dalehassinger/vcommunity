@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="revised" content="2023-11-24T06:11:37 EST">
-<title>Header :: </title>
+<title>Windows Service :: </title>
 <link rel="shortcut icon" href="/vcommunity/images/favicon.png" type="image/x-icon" />
 <link href="/vcommunity/css/nucleus.css" rel="stylesheet">
 <link href="/vcommunity/css/font-awesome.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
 
     
   </head>
-  <body data-url="/vcommunity/_header/">
+  <body data-url="/vcommunity/aria-automation-config/states/windows-service/">
     
       <header>
   <div class="logo">
@@ -250,7 +250,15 @@
     <option value="/vcommunity/aria-automation/" >
    Aria Automation</option>
     <option value="/vcommunity/aria-automation-config/" >
-   Aria Automation Config</option>
+   Aria Automation Config</option> 
+    <option value="/vcommunity/aria-automation-config/states/" >
+   States</option> 
+    <option value="/vcommunity/aria-automation-config/states/windows-service/"  selected>
+   Windows Service</option>
+  
+    <option value="/vcommunity/aria-automation-config/targets/" >
+   Targets</option>
+  
     <option value="/vcommunity/aria-operations/" >
    Aria Operations</option>
     <option value="/vcommunity/aria-operations-for-logs/" >
@@ -274,18 +282,50 @@
       </div>
     
 
-    <h1>Header</h1>
+    <h1>Windows Service</h1>
     
     
     
-    <p><a href="/vcommunity/"><span class="fa fa-home" aria-hidden="true"></span> Automation | Monitoring | Logging</a></p>
+
+<p>Windows Service:</p>
+<div class="highlight"><pre tabindex="0" style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># State file for Windows Services</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># This state can be changed to work with any Windows Service</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Change the name to match the service name you want to use</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Example on how to run state.apply from cli</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># salt &#34;WIN-19-001&#34; state.apply states.spooler</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Stop a Windows Service</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">stop_service</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">service.dead</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span><span style="color:#111">:</span> <span style="color:#ae81ff">spooler</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Start a Windows Service and Startup will be Automatic   </span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">Start_service</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">service.running</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">enable</span><span style="color:#111">:</span> <span style="color:#00a8c8">True</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span><span style="color:#111">:</span> <span style="color:#ae81ff">spooler</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Disable a Windows Service    </span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">disable_service</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">service.disabled</span><span style="color:#111">:</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span><span style="color:#111">:</span> <span style="color:#ae81ff">spooler</span>
+</span></span><span style="display:flex;"><span>    </span></span></code></pre></div>
+
+<div class="panel panel-info"><div class="panel-heading"><strong>Article Information:</strong></div><div class="panel-body"><ul>
+<li><strong>Created By:</strong> Dale Hassinger</li>
+<li><strong>TAGs:</strong> #AriaAutomationConfig, #State, #WindowsService, #WindowsServer</li>
+</ul>
+</div></div>
+
+
 
 
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-next" href="/vcommunity/about/" title="About" style="margin-right: 0px;"><label>About</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/vcommunity/aria-automation-config/states/" title="States"> <i class="fa fa-chevron-left"></i><label>States</label></a>
+    <a class="nav nav-next" href="/vcommunity/aria-automation-config/targets/" title="Targets" style="margin-right: 0px;"><label>Targets</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
